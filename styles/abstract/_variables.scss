@@ -1,0 +1,51 @@
+//* COLORS
+
+//* --- Primary
+$color-primary-50: hsl(218, 100%, 93%); //* Pattens Blue
+$color-primary-100: hsl(219, 100%, 83%); //* Anakiwa Blue
+$color-primary-200: hsl(219, 100%, 63%); //* Dodger Blue
+$color-primary-250: hsl(210, 29%, 49%); //* Horizon Blue
+$color-primary-300: hsl(210, 28%, 29%); //* Pickled Bluewood
+$color-primary-300: hsl(210, 28%, 9%); //* Pickled Bluewood
+$color-primary-400: hsl(219, 100%, 23%); //* Midnight Blue
+
+//* --- Secondary
+$color-secondary-100: hsl(60, 3%, 6%); //* Cape Honey Orange
+$color-secondary-200: hsl(41, 100%, 63%); //* Bright Sun Orange
+$color-secondary-300: hsl(41, 93%, 51%); //* Tangerine Orange
+$color-secondary-350: hsl(41, 100%, 33%); //* Pirate Gold Orange
+$color-secondary-400: hsl(41, 100%, 23%); //* Cinnamon Orange
+
+//* --- White to Black
+$color-white: hsl(0, 0%, 100%); //* White
+$color-white-50: hsl(0, 0%, 95%); //* Concrete White
+$color-white-100: hsl(0, 0%, 90%); //* Mercury White
+$color-white-200: hsl(0, 0%, 80%); //* Silver White
+$color-grey-300: hsl(0, 0%, 70%); //* Nobel Grey
+$color-grey-400: hsl(0, 0%, 60%); //* Dusty Grey
+$color-grey-500: hsl(0, 0%, 50%); //* Grey
+$color-grey-600: hsl(0, 0%, 40%); //* Dove Grey
+$color-grey-700: hsl(0, 0%, 30%); //* Tundora Grey
+$color-black-800: hsl(0, 0%, 20%); //* Mine Shaft Grey
+$color-black-900: hsl(0, 0%, 10%); //* Cod Grey
+$color-black: hsl(0, 0%, 0%); //* Black
+
+//* FONT
+
+$default-font-size: 1.6rem;
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+
+//* GRID
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+//* RESPONSIVE BREAKPOINTS
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px

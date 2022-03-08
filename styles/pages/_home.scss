@@ -1,0 +1,131 @@
+.article-about,
+.article-services,
+.article-contact {
+  min-height: 100vh;
+  padding: 10rem 20rem;
+}
+
+.article-about {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  &__image {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  &__text {
+    grid-row: 2 / span 1;
+    grid-column: 2 / -1;
+
+    display: flex;
+    align-items: center;
+
+    p {
+      max-width: 45ch;
+    }
+  }
+}
+
+.article-services {
+  background-color: $color-primary-50;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  &__grid {
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+  }
+}
+
+.article-contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+
+  &__title {
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  &__details {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+
+    display: grid;
+    place-items: center;
+  }
+
+  &__text {
+    background-color: $color-white-100;
+    border-radius: 0.5rem;
+    height: 22rem;
+    padding: 2rem 4rem;
+    width: 45rem;
+
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    font-size: 1.5rem;
+
+    span {
+      color: $color-grey-600;
+    }
+
+    .contact-heading {
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        margin-right: 1rem;
+      }
+    }
+
+    .opening-hours {
+      padding-right: 2rem;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__form {
+    grid-row: 2 / span 1;
+    grid-column: 2 / -1;
+  }
+}
