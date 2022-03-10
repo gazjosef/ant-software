@@ -3,8 +3,6 @@
   padding: 5rem;
 
   display: grid;
-  grid-column: 1 / -1;
-  // grid-template-rows: min-content 10rem;
   grid-template-columns: repeat(4, 1fr);
 
   color: $color-white-200;
@@ -12,6 +10,10 @@
   & > * {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__header {
+    color: $color-secondary-300;
   }
 
   &__logo {
@@ -32,14 +34,10 @@
 
     display: flex;
     align-items: center;
-  }
 
-  .footer-heading {
-    display: flex;
-    align-items: center;
-
-    &__icon {
-      margin-right: 1rem;
+    span {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
     }
   }
 }

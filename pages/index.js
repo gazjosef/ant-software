@@ -183,8 +183,8 @@ export default function Home() {
         <section className="article-contact__details">
           <div className="article-contact__text">
             <div>
-              <h3 className="contact-heading u-margin-bottom-small">
-                <FaClock className="contact-heading__icon" /> Opening Hours
+              <h3 className="align-items u-margin-bottom-small">
+                <FaClock className="align-items__icon" /> Opening Hours
               </h3>
               <ul className=" opening-hours">
                 <li className="opening-hours__item">
@@ -210,15 +210,15 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="contact-heading u-margin-bottom-small">
-                <FaPhone className="contact-heading__icon" /> Phone
+              <h3 className="align-items u-margin-bottom-small">
+                <FaPhone className="align-items__icon" /> Phone
               </h3>
               <p>
                 <span>0499 884 088</span>
               </p>
               <br />
-              <h3 className="contact-heading u-margin-bottom-small">
-                <FaEnvelope className="contact-heading__icon" /> Email
+              <h3 className="align-items u-margin-bottom-small">
+                <FaEnvelope className="align-items__icon" /> Email
               </h3>
               <p>
                 <span>ant@antsoftware.dev</span>

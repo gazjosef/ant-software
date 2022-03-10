@@ -21,7 +21,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer__nav-links">
-        <h2 className="u-margin-bottom-small">Nav Links</h2>
+        <h2 className="footer__header u-margin-bottom-small">Nav Links</h2>
         <ul className="nav">
           <li className="nav__item">
             <a href="#home" className="nav__link">
@@ -47,7 +47,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer__nav-links">
-        <h2 className="u-margin-bottom-small">Social Media</h2>
+        <h2 className="footer__header u-margin-bottom-small">Social Media</h2>
         <ul className="nav">
           <li className="nav__item">
             <a href="#home" className="nav__link">
@@ -73,13 +73,13 @@ export const Footer = () => {
       </div>
 
       <div className="footer__contact-details">
-        <h2 className="u-margin-bottom-small">Contact Us</h2>
-        <p className="footer-heading">
-          <FaPhone className="footer-heading__icon" /> Phone
+        <h2 className="footer__header u-margin-bottom-small">Contact Us</h2>
+        <p className="align-items">
+          <FaPhone className="align-items__icon" /> Phone
         </p>
         <p className="u-margin-bottom-small">0499 884 088</p>
-        <p className="footer-heading">
-          <FaEnvelope className="footer-heading__icon" /> Email
+        <p className="align-items">
+          <FaEnvelope className="align-items__icon" /> Email
         </p>
         <p>ant@antsoftware.dev</p>
       </div>
