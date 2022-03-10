@@ -18,6 +18,15 @@
   &--nav {
     background-color: transparent;
     color: $color-primary-200;
+
+    a {
+      cursor: pointer;
+    }
+
+    a:focus,
+    a:visited {
+      color: $color-black;
+    }
   }
 
   &--nav:hover {

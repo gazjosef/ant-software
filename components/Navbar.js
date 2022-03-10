@@ -1,17 +1,12 @@
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 
 export const Nav = () => {
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
   return (
     <nav className="navbar">
       <div className="navbar__logo-box">
-        <img src="/img/black-logo.png" alt="Logo" className="logo" />
+        <Link href="#home">
+          <img src="/img/black-logo.png" alt="Logo" className="logo" />
+        </Link>
       </div>
 
       <div className="navbar__menu">
@@ -45,19 +40,6 @@ export const Nav = () => {
           <a>Enquire Now</a>
         </Link>
       </button>
-
-      <div className="navbar__button" onClick={handleClick}>
-        {click ? <FaTimes /> : <FaBars />}
-      </div>
-      {/* <div className="navbar__hamburger" onClick={handleClick}>
-        <!-- ? Old Button --> 
-        <button className="open-slide hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        
-      </div> */}
     </nav>
   );
 };

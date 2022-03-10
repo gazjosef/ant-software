@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: 1px solid $color-black-800;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba($color-black, 0.2);
   height: 8rem;
   padding: 0.5rem 5rem;
 
@@ -148,7 +148,7 @@
 
     .nav-links:focus,
     .nav-links:visited {
-      color: #000;
+      color: $color-black;
     }
 
     .nav-links:hover {
