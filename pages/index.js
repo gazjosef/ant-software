@@ -64,27 +64,29 @@ export default function Home() {
 
   return (
     <div className="container">
-      <header id="home" className="header">
-        <div className="header__title">
-          <h1>
+      <article id="home" className="article-home">
+        <div className="article-home__title">
+          <h2 className="heading-two">
             Get scalable, modern and reliable <span>custom software</span>
-          </h1>
+          </h2>
         </div>
-        <div className="header__text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-            praesentium, tenetur dolorum maiores illo at!
-          </p>
-          <button className="btn">Enquire Now</button>
+        <div className="article-home__text">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              praesentium, tenetur dolorum maiores illo at!
+            </p>
+            <button className="article-home__btn btn">Enquire Now</button>
+          </div>
         </div>
         <Image
-          className="header__img"
+          className="article-home__img"
           src="/img/illustrations/undraw_responsive_6c8s.svg"
           alt="responsive"
           width={500}
           height={350}
         />
-      </header>
+      </article>
       <article id="about" className="article-about" ref={ref}>
         <section className="article-about__title">
           <h1 className="heading-one">About Us</h1>
@@ -186,7 +188,7 @@ export default function Home() {
               <h3 className="align-items u-margin-bottom-small">
                 <FaClock className="align-items__icon" /> Opening Hours
               </h3>
-              <ul className=" opening-hours">
+              <ul className="opening-hours">
                 <li className="opening-hours__item">
                   <span>Mon: </span>
                   <span>09:00 - 17:00</span>
