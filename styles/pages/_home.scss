@@ -2,8 +2,8 @@
 .article-about,
 .article-services,
 .article-contact {
-  min-height: calc(100vh - 8rem);
-  padding: 10rem 20rem;
+  min-height: 100vh;
+  padding: 15rem 20rem 10rem;
 
   @include respond(tab-land) {
     padding: 5rem 10rem;
@@ -12,15 +12,16 @@
 
 .article-home {
   background-color: $color-primary-50;
-  padding-top: 8rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+  place-items: center;
 
   &__title {
     margin-bottom: 6rem;
     grid-column: 1 / -1;
+    text-align: left;
 
     span {
       color: $color-primary-200;
@@ -30,6 +31,7 @@
   &__text {
     grid-column: 1 / span 1;
     display: grid;
+    place-items: center;
 
     font-size: 2rem;
     max-width: 45ch;
@@ -82,7 +84,7 @@
   background-color: $color-primary-50;
 
   display: grid;
-  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 2rem;
 
   & > * {
@@ -127,24 +129,12 @@
   }
 
   &__details {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-
-    display: grid;
-    grid-gap: 1rem;
-
-    @include respond(tab-port) {
-      grid-column: 1 / span 2;
-      grid-gap: 2rem;
-    }
-  }
-
-  &__text {
     background-color: $color-white-100;
     border-radius: 0.5rem;
     padding: 2rem 4rem;
 
     grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -159,12 +149,10 @@
 
     font-size: 1.5rem;
 
-    span {
-      color: $color-grey-600;
-    }
-
     .opening-hours {
       padding-right: 2rem;
+
+      grid-row: 1 / span 2;
 
       &__item {
         display: flex;
@@ -173,9 +161,14 @@
     }
   }
 
+  &__img {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
   &__form {
-    grid-row: 2 / span 1;
-    grid-column: 2 / -1;
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 1;
 
     @include respond(tab-port) {
       grid-row: 3 / span 1;

@@ -15,79 +15,34 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 export default function Home() {
-  const [ref, inView] = useInView({
-    threshold: 0.2,
-  });
-  const [ref2, inView2] = useInView({
-    threshold: 0.2,
-  });
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    console.log("use effect hook, inView = ", inView);
-
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.3,
-        },
-      });
-    }
-
-    if (!inView) {
-      animation.start({ x: "-100vw" });
-    }
-  }, [inView]);
-
-  useEffect(() => {
-    console.log("use effect hook, inView = ", inView2);
-
-    if (inView2) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.3,
-        },
-      });
-    }
-
-    if (!inView2) {
-      animation.start({ x: "-100vw" });
-    }
-  }, [inView2]);
-
   return (
     <div className="container">
       <article id="home" className="article-home">
-        <div className="article-home__title">
+        <section className="article-home__title">
           <h2 className="heading-two">
             Get scalable, modern and reliable <span>custom software</span>
           </h2>
-        </div>
-        <div className="article-home__text">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-              praesentium, tenetur dolorum maiores illo at!
-            </p>
-            <button className="article-home__btn btn">Enquire Now</button>
-          </div>
-        </div>
-        <Image
-          className="article-home__img"
-          src="/img/illustrations/undraw_responsive_6c8s.svg"
-          alt="responsive"
-          width={500}
-          height={350}
-        />
+        </section>
+        <section className="article-home__text">
+          <p className="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            laudantium quos officiis, assumenda maiores autem aut voluptatem rem
+            eligendi? Facere corrupti commodi sapiente maiores, voluptatibus
+            corporis.
+          </p>
+          <button className="article-home__btn btn">Enquire Now</button>
+        </section>
+        <section className="article-home__img">
+          <Image
+            className="article-home__img"
+            src="/img/illustrations/undraw_responsive_6c8s.svg"
+            alt="responsive"
+            width={500}
+            height={350}
+          />
+        </section>
       </article>
-      <article id="about" className="article-about" ref={ref}>
+      <article id="about" className="article-about">
         <section className="article-about__title">
           <h1 className="heading-one">About Us</h1>
           <h2 className="heading-two">
@@ -114,7 +69,7 @@ export default function Home() {
         </section>
       </article>
 
-      <article id="services" className="article-services" ref={ref2}>
+      <article id="services" className="article-services">
         <section className="article-services__title">
           <h1 className="heading-one">Services</h1>
           <h2 className="heading-two">
@@ -127,7 +82,7 @@ export default function Home() {
             <h2 className="feature-box__title u-margin-bottom-small">
               Custom Business Software
             </h2>
-            <p>
+            <p className="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               dignissimos iste ducimus voluptatibus suscipit porro!
             </p>
@@ -138,7 +93,7 @@ export default function Home() {
             <h2 className="feature-box__title u-margin-bottom-small">
               E-Commerce, Online Store Fronts
             </h2>
-            <p>
+            <p className="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               dignissimos iste ducimus voluptatibus suscipit porro!
             </p>
@@ -158,7 +113,7 @@ export default function Home() {
           <div className="feature-box">
             <FaSearch size={70} className="u-margin-bottom-medium" />
             <h2 className="feature-box__title u-margin-bottom-small">SEO</h2>
-            <p>
+            <p className="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               dignissimos iste ducimus voluptatibus suscipit porro!
             </p>
@@ -169,7 +124,7 @@ export default function Home() {
             <h2 className="feature-box__title u-margin-bottom-small">
               Consulting
             </h2>
-            <p>
+            <p className="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               dignissimos iste ducimus voluptatibus suscipit porro!
             </p>
@@ -183,51 +138,53 @@ export default function Home() {
         </section>
 
         <section className="article-contact__details">
-          <div className="article-contact__text">
-            <div>
-              <h3 className="align-items u-margin-bottom-small">
-                <FaClock className="align-items__icon" /> Opening Hours
-              </h3>
-              <ul className="opening-hours">
-                <li className="opening-hours__item">
-                  <span>Mon: </span>
-                  <span>09:00 - 17:00</span>
-                </li>
-                <li className="opening-hours__item">
-                  <span>Tue: </span>
-                  <span>09:00 - 17:00</span>
-                </li>
-                <li className="opening-hours__item">
-                  <span>Wed: </span>
-                  <span>09:00 - 17:00</span>
-                </li>
-                <li className="opening-hours__item">
-                  <span>Thu: </span>
-                  <span>09:00 - 17:00</span>
-                </li>
-                <li className="opening-hours__item">
-                  <span>Fri: </span>
-                  <span>09:00 - 17:00</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="align-items u-margin-bottom-small">
-                <FaPhone className="align-items__icon" /> Phone
-              </h3>
-              <p>
-                <span>0499 884 088</span>
-              </p>
-              <br />
+          <section className="opening-hours">
+            <h3 className="align-items u-margin-bottom-small">
+              <FaClock className="align-items__icon" /> Opening Hours
+            </h3>
+            <ul>
+              <li className="opening-hours__item">
+                <span>Mon: </span>
+                <span>09:00 - 17:00</span>
+              </li>
+              <li className="opening-hours__item">
+                <span>Tue: </span>
+                <span>09:00 - 17:00</span>
+              </li>
+              <li className="opening-hours__item">
+                <span>Wed: </span>
+                <span>09:00 - 17:00</span>
+              </li>
+              <li className="opening-hours__item">
+                <span>Thu: </span>
+                <span>09:00 - 17:00</span>
+              </li>
+              <li className="opening-hours__item">
+                <span>Fri: </span>
+                <span>09:00 - 17:00</span>
+              </li>
+            </ul>
+          </section>
+          <section className="phone">
+            <h3 className=" align-items u-margin-bottom-small">
+              <FaPhone className="align-items__icon" /> Phone
+            </h3>
+            <p className="paragraph">
+              <span>0499 884 088</span>
+            </p>
+
+            <section className="email">
               <h3 className="align-items u-margin-bottom-small">
                 <FaEnvelope className="align-items__icon" /> Email
               </h3>
-              <p>
+              <p className="paragraph">
                 <span>ant@antsoftware.dev</span>
               </p>
-            </div>
-          </div>
+            </section>
+          </section>
+        </section>
 
+        <section className="article-contact__img">
           <Image
             src="/img/illustrations/undraw_programming_2svr.svg"
             alt="responsive"
