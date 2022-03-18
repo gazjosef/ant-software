@@ -7,6 +7,8 @@ body {
 }
 
 .heading-one {
+  margin-bottom: 5rem;
+
   color: $color-secondary-300;
   font-family: $font-secondary;
   font-size: 3.5rem;
@@ -21,7 +23,6 @@ body {
 }
 
 .heading-two {
-  margin-top: 5rem;
   max-width: 35ch;
 
   color: $color-black-800;
@@ -32,9 +33,13 @@ body {
     color: $color-primary-200;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     font-size: 3rem;
   }
+
+  // @include respond(tab-port) {
+  //   font-size: 3rem;
+  // }
 
   @include respond(phone) {
     font-size: 2.5rem;

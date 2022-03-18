@@ -46,7 +46,7 @@ export const Footer = () => {
         </ul>
       </div>
 
-      <div className="footer__nav-links">
+      <div className="footer__social-media">
         <h2 className="footer__header u-margin-bottom-small">Social Media</h2>
         <ul className="nav">
           <li className="nav__item">

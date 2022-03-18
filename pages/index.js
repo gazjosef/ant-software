@@ -225,7 +225,7 @@ export default function Home() {
               id="subject"
               name="subject"
               placeholder="Write something.."
-              style={{ height: "70px" }}
+              style={{ height: "130px" }}
             ></textarea>
 
             <input type="submit" value="Submit" className="btn" />

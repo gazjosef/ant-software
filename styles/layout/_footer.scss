@@ -7,6 +7,15 @@
 
   color: $color-white-200;
 
+  @include respond(tab-port) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  a {
+    color: $color-white;
+  }
+
   & > * {
     margin-left: auto;
     margin-right: auto;
@@ -19,11 +28,33 @@
   &__logo {
     display: flex;
     align-items: center;
+
+    @include respond(tab-port) {
+      padding: 0 20rem;
+      margin-bottom: 5rem;
+      grid-row: 1 / span 1;
+      grid-column: 1 / -1;
+    }
   }
 
   &__nav-links {
-    a {
-      color: $color-white;
+    @include respond(tab-port) {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+  }
+
+  &__social-media {
+    @include respond(tab-port) {
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1;
+    }
+  }
+
+  &__contact-details {
+    @include respond(tab-port) {
+      grid-row: 2 / span 1;
+      grid-column: 3 / span 1;
     }
   }
 
@@ -34,6 +65,11 @@
 
     display: flex;
     align-items: center;
+
+    @include respond(tab-port) {
+      grid-row: 3 / span 1;
+      grid-column: 1 / -1;
+    }
 
     span {
       margin-left: 0.75rem;
