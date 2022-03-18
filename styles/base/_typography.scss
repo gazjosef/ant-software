@@ -22,6 +22,7 @@ body {
 
 .heading-two {
   margin-top: 5rem;
+  max-width: 35ch;
 
   color: $color-black-800;
   font-size: 3.5rem;
@@ -44,6 +45,7 @@ body {
   font-size: $default-font-size;
   line-height: 2;
   text-align: justify;
+  max-width: 45ch;
 
   &:not(:last-child) {
     margin-bottom: 3rem;

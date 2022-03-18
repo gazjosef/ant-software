@@ -8,6 +8,8 @@ import {
   FaEnvelope,
   FaPhone,
 } from "react-icons/fa";
+
+// Framer Motion
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -18,12 +20,10 @@ export default function Home() {
   return (
     <div className="container">
       <article id="home" className="article-home">
-        <section className="article-home__title">
+        <section className="article-home__text">
           <h2 className="heading-two">
             Get scalable, modern and reliable <span>custom software</span>
           </h2>
-        </section>
-        <section className="article-home__text">
           <p className="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             laudantium quos officiis, assumenda maiores autem aut voluptatem rem
@@ -32,6 +32,7 @@ export default function Home() {
           </p>
           <button className="article-home__btn btn">Enquire Now</button>
         </section>
+
         <section className="article-home__img">
           <Image
             className="article-home__img"
@@ -42,6 +43,7 @@ export default function Home() {
           />
         </section>
       </article>
+
       <article id="about" className="article-about">
         <section className="article-about__title">
           <h1 className="heading-one">About Us</h1>
@@ -172,15 +174,14 @@ export default function Home() {
             <p className="paragraph">
               <span>0499 884 088</span>
             </p>
-
-            <section className="email">
-              <h3 className="align-items u-margin-bottom-small">
-                <FaEnvelope className="align-items__icon" /> Email
-              </h3>
-              <p className="paragraph">
-                <span>ant@antsoftware.dev</span>
-              </p>
-            </section>
+          </section>
+          <section className="email">
+            <h3 className="align-items u-margin-bottom-small">
+              <FaEnvelope className="align-items__icon" /> Email
+            </h3>
+            <p className="paragraph">
+              <span>ant@antsoftware.dev</span>
+            </p>
           </section>
         </section>
 
