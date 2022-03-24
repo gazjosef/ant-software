@@ -17,6 +17,7 @@ export const Footer = () => {
           alt="Ant Software"
           height="893"
           width="3150"
+          className="logo"
         />
       </div>
 

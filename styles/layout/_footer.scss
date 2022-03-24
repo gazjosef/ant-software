@@ -12,6 +12,11 @@
     grid-gap: 2rem;
   }
 
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
   a {
     color: $color-white;
   }
@@ -26,19 +31,31 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-
     @include respond(tab-port) {
-      padding: 0 20rem;
-      margin-bottom: 5rem;
       grid-row: 1 / span 1;
-      grid-column: 1 / -1;
+      grid-column: 2 / span 1;
+    }
+
+    @include respond(phone) {
+      grid-column: 1 / span 1;
+      display: grid;
+      place-content: center;
+    }
+
+    .logo {
+      @include respond(tab-port) {
+        max-height: 5rem;
+      }
     }
   }
 
   &__nav-links {
     @include respond(tab-port) {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    @include respond(phone) {
       grid-row: 2 / span 1;
       grid-column: 1 / span 1;
     }
@@ -49,12 +66,22 @@
       grid-row: 2 / span 1;
       grid-column: 2 / span 1;
     }
+
+    @include respond(phone) {
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1;
+    }
   }
 
   &__contact-details {
     @include respond(tab-port) {
       grid-row: 2 / span 1;
       grid-column: 3 / span 1;
+    }
+
+    @include respond(phone) {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1;
     }
   }
 
@@ -67,6 +94,11 @@
     align-items: center;
 
     @include respond(tab-port) {
+      grid-row: 3 / span 1;
+      grid-column: 1 / -1;
+    }
+
+    @include respond(phone) {
       grid-row: 3 / span 1;
       grid-column: 1 / -1;
     }

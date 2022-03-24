@@ -155,8 +155,6 @@
   }
 
   &__details {
-    // border-radius: 0.5rem;
-    // background-color: $color-white-100;
     margin-left: auto;
     margin-right: auto;
     padding: 2rem;
@@ -169,6 +167,12 @@
 
     @include respond(tab-port) {
       width: 70vw;
+      justify-content: space-around;
+    }
+
+    @include respond(phone) {
+      width: 70vw;
+      justify-content: space-between;
     }
   }
 
