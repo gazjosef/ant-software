@@ -137,36 +137,13 @@ export default function Home() {
       <article id="contact" className="article-contact">
         <section className="article-contact__title">
           <h1 className="heading-one u-margin-bottom-medium">Contact</h1>
+          <h2 className="heading-two">
+            We here to <span>help and answer</span> any questions you might
+            have.
+          </h2>
         </section>
 
         <section className="article-contact__details">
-          <section className="opening-hours">
-            <h3 className="align-items u-margin-bottom-small">
-              <FaClock className="align-items__icon" /> Opening Hours
-            </h3>
-            <ul>
-              <li className="opening-hours__item">
-                <span>Mon: </span>
-                <span>09:00 - 17:00</span>
-              </li>
-              <li className="opening-hours__item">
-                <span>Tue: </span>
-                <span>09:00 - 17:00</span>
-              </li>
-              <li className="opening-hours__item">
-                <span>Wed: </span>
-                <span>09:00 - 17:00</span>
-              </li>
-              <li className="opening-hours__item">
-                <span>Thu: </span>
-                <span>09:00 - 17:00</span>
-              </li>
-              <li className="opening-hours__item">
-                <span>Fri: </span>
-                <span>09:00 - 17:00</span>
-              </li>
-            </ul>
-          </section>
           <section className="phone">
             <h3 className=" align-items u-margin-bottom-small">
               <FaPhone className="align-items__icon" /> Phone

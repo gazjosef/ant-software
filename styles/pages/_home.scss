@@ -50,6 +50,7 @@
 
 .article-about {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @include respond(tab-land) {
     grid-gap: 2rem;
@@ -77,7 +78,7 @@
 
   &__text {
     grid-row: 2 / span 1;
-    grid-column: 2 / -1;
+    grid-column: 2 / span 1;
 
     display: flex;
     align-items: center;
@@ -132,24 +133,21 @@
 
 .article-contact {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+
   grid-gap: 2rem;
 
   & > * {
     display: grid;
-    justify-content: flex-end;
+    place-content: center;
   }
 
   &__title {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
-    place-content: center;
+    text-align: center;
   }
 
   &__img {
     grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-    place-content: center;
 
     @include respond(tab-port) {
       grid-column: 1 / span 2;
@@ -157,58 +155,31 @@
   }
 
   &__details {
-    background-color: $color-white-100;
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
+    // background-color: $color-white-100;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2rem;
+    width: 40vw;
 
     grid-row: 3 / span 1;
-    grid-column: 1 / span 1;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    place-content: center;
-
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @include respond(tab-port) {
-      grid-column: 1 / -1;
-    }
-
-    .opening-hours {
-      width: 75%;
-
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 1;
-
-      @include respond(tab-port) {
-        width: 100%;
-      }
-
-      &__item {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-
-    .phone {
-      grid-row: 2 / span 1;
-      grid-column: 1 / span 1;
-    }
-
-    .email {
-      grid-row: 2 / span 1;
-      grid-column: 2 / span 1;
+      width: 70vw;
     }
   }
 
   &__form {
-    grid-row: 2 / span 2;
-    grid-column: 2 / span 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    grid-row: 4 / span 1;
 
     @include respond(tab-port) {
-      grid-row: 4 / span 1;
-      grid-column: 1 / -1;
+      width: 70vw;
     }
   }
 }
