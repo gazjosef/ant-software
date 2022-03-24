@@ -50,7 +50,6 @@
 
 .article-about {
   display: grid;
-  grid-template-columns: repeat(2, minmax(10rem, 1fr));
 
   @include respond(tab-land) {
     grid-gap: 2rem;
@@ -70,6 +69,10 @@
   &__image {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
+
+    @include respond(phone) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__text {
@@ -81,6 +84,11 @@
 
     p {
       max-width: 45ch;
+    }
+
+    @include respond(phone) {
+      grid-row: 3 / span 1;
+      grid-column: 1 / -1;
     }
   }
 }
@@ -114,6 +122,10 @@
 
     @include respond(tab-port) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
 }

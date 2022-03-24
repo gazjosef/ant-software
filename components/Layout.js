@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { Meta } from "@/components/Meta";
 import { Nav } from "@/components/Navbar";
+import Navbar from "./Navbar/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const Layout = ({ children }) => {
@@ -21,7 +22,8 @@ export const Layout = ({ children }) => {
         />
       </header>
 
-      <Nav />
+      {/* <Nav /> */}
+      <Navbar />
 
       {router.pathname === "/"}
 
