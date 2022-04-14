@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   FaBriefcase,
   FaShoppingCart,
@@ -8,16 +9,24 @@ import {
   FaPhone,
 } from "react-icons/fa";
 
-import Image from "next/image";
+import { motion } from "framer-motion";
+import { dropIn } from "@/styles/base/_animation";
 
 export default function Home() {
+  console.log(dropIn);
   return (
     <div className="container">
       <article id="home" className="article-home">
         <section className="article-home__text">
-          <h2 className="heading-two">
+          <motion.h2
+            className="heading-two"
+            variants={dropIn}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
             Get scalable, modern and reliable <span>custom software</span>
-          </h2>
+          </motion.h2>
           <p className="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             laudantium quos officiis, assumenda maiores autem aut voluptatem rem
@@ -40,7 +49,15 @@ export default function Home() {
 
       <article id="about" className="article-about">
         <section className="article-about__title">
-          <h1 className="heading-one">About Us</h1>
+          <motion.h1
+            className="heading-one"
+            variants={dropIn}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            About Us
+          </motion.h1>
           <h2 className="heading-two">
             Software development company that vows your <span>success</span>.
           </h2>
@@ -131,32 +148,13 @@ export default function Home() {
       <article id="contact" className="article-contact">
         <section className="article-contact__title">
           <h1 className="heading-one u-margin-bottom-medium">Contact</h1>
+        </section>
+
+        <section className="article-contact__img">
           <h2 className="heading-two">
             We here to <span>help and answer</span> any questions you might
             have.
           </h2>
-        </section>
-
-        <section className="article-contact__details">
-          <section className="phone">
-            <h3 className=" align-items u-margin-bottom-small">
-              <FaPhone className="align-items__icon" /> Phone
-            </h3>
-            <p className="paragraph">
-              <span>0499 884 088</span>
-            </p>
-          </section>
-          <section className="email">
-            <h3 className="align-items u-margin-bottom-small">
-              <FaEnvelope className="align-items__icon" /> Email
-            </h3>
-            <p className="paragraph">
-              <span>ant@antsoftware.dev</span>
-            </p>
-          </section>
-        </section>
-
-        <section className="article-contact__img">
           <Image
             src="/img/illustrations/undraw_programming_2svr.svg"
             alt="responsive"
@@ -201,6 +199,25 @@ export default function Home() {
 
             <input type="submit" value="Submit" className="btn" />
           </form>
+        </section>
+
+        <section className="article-contact__details">
+          <section className="phone">
+            <h3 className=" align-items u-margin-bottom-small">
+              <FaPhone className="align-items__icon" /> Phone
+            </h3>
+            <p className="paragraph">
+              <span>0499 884 088</span>
+            </p>
+          </section>
+          <section className="email">
+            <h3 className="align-items u-margin-bottom-small">
+              <FaEnvelope className="align-items__icon" /> Email
+            </h3>
+            <p className="paragraph">
+              <span>ant@antsoftware.dev</span>
+            </p>
+          </section>
         </section>
       </article>
     </div>

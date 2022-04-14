@@ -133,7 +133,7 @@
 
 .article-contact {
   display: grid;
-
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 
   & > * {
@@ -143,47 +143,39 @@
 
   &__title {
     grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
     text-align: center;
   }
 
   &__img {
     grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
 
-    @include respond(tab-port) {
-      grid-column: 1 / span 2;
-    }
-  }
+    text-align: center;
 
-  &__details {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-    width: 40vw;
-
-    grid-row: 3 / span 1;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @include respond(tab-port) {
-      width: 70vw;
-      justify-content: space-around;
-    }
-
-    @include respond(phone) {
-      width: 70vw;
-      justify-content: space-between;
-    }
+    flex-direction: column;
+    justify-content: space-around;
+    // align-items: flex-start;
   }
 
   &__form {
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
-    grid-row: 4 / span 1;
 
-    @include respond(tab-port) {
-      width: 70vw;
-    }
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__details {
+    padding: 2rem;
+    margin-top: 3rem;
+
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }

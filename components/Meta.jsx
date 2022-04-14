@@ -17,5 +17,5 @@ Meta.defaultProps = {
   title: "Ant Software Dev | Embiggened Innovation",
   keywords: "web design, web development",
   description:
-    "Get scalable, modern and reliable custom software and let your business grow. ",
+    "Get scalable, modern and reliable custom software and let your business grow.",
 };
