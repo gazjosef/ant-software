@@ -10,10 +10,9 @@ import {
 } from "react-icons/fa";
 
 import { motion } from "framer-motion";
-import { dropIn } from "@/styles/base/_animation";
+import { dropIn, scrollTriggered } from "@/styles/base/_animation";
 
 export default function Home() {
-  console.log(dropIn);
   return (
     <div className="container">
       <article id="home" className="article-home">
@@ -51,10 +50,10 @@ export default function Home() {
         <section className="article-about__title">
           <motion.h1
             className="heading-one"
-            variants={dropIn}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+            variants={scrollTriggered}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
           >
             About Us
           </motion.h1>
@@ -161,6 +160,25 @@ export default function Home() {
             width={300}
             height={225}
           />
+
+          <section className="article-contact__details">
+            <section className="phone">
+              <h3 className=" align-items u-margin-bottom-small">
+                <FaPhone className="align-items__icon" /> Phone
+              </h3>
+              <p className="paragraph">
+                <span>0499 884 088</span>
+              </p>
+            </section>
+            <section className="email">
+              <h3 className="align-items u-margin-bottom-small">
+                <FaEnvelope className="align-items__icon" /> Email
+              </h3>
+              <p className="paragraph">
+                <span>ant@antsoftware.dev</span>
+              </p>
+            </section>
+          </section>
         </section>
 
         <section className="article-contact__form">
@@ -199,25 +217,6 @@ export default function Home() {
 
             <input type="submit" value="Submit" className="btn" />
           </form>
-        </section>
-
-        <section className="article-contact__details">
-          <section className="phone">
-            <h3 className=" align-items u-margin-bottom-small">
-              <FaPhone className="align-items__icon" /> Phone
-            </h3>
-            <p className="paragraph">
-              <span>0499 884 088</span>
-            </p>
-          </section>
-          <section className="email">
-            <h3 className="align-items u-margin-bottom-small">
-              <FaEnvelope className="align-items__icon" /> Email
-            </h3>
-            <p className="paragraph">
-              <span>ant@antsoftware.dev</span>
-            </p>
-          </section>
         </section>
       </article>
     </div>
