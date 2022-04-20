@@ -19,6 +19,10 @@ export const Footer = () => {
           width="3150"
           className="logo"
         />
+        <p className="quote">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+          mollitia id aperiam."
+        </p>
       </div>
 
       <div className="footer__nav-links">

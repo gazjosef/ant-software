@@ -12,18 +12,27 @@ import {
 import { motion } from "framer-motion";
 import { dropIn, scrollTriggered } from "@/styles/base/_animation";
 
+const cardVariants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 50,
+    // rotate: -10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
+
 export default function Home() {
   return (
     <div className="container">
       <article id="home" className="article-home">
         <section className="article-home__text">
-          <motion.h2
-            className="heading-two"
-            variants={dropIn}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-          >
+          <motion.h2 className="heading-two">
             Get scalable, modern and reliable <span>custom software</span>
           </motion.h2>
           <p className="paragraph">
@@ -50,14 +59,14 @@ export default function Home() {
         <section className="article-about__title">
           <motion.h1
             className="heading-one"
-            variants={scrollTriggered}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            // FRAMER MOTION
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
           >
             About Us
           </motion.h1>
-          <h2 className="heading-two">
+          <h2 className="heading-two" variants={cardVariants}>
             Software development company that vows your <span>success</span>.
           </h2>
         </section>
