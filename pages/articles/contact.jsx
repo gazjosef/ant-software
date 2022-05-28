@@ -1,18 +1,28 @@
 import Image from "next/image";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsapFadeIn } from "../../components/Animations";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
-export default function services() {
+export default function Contact() {
+  const contactTitleRef = useRef(null);
+  const contactImgRef = useRef(null);
+  const contactDetailsRef = useRef(null);
+  const contactFormRef = useRef(null);
+
+  useEffect(() => {
+    gsapFadeIn(contactTitleRef, 0.3);
+    gsapFadeIn(contactImgRef, 0.3);
+    gsapFadeIn(contactDetailsRef, 0.3);
+    gsapFadeIn(contactFormRef, 0.3);
+  }, []);
+
   return (
     <article id="contact" className="article-contact">
-      <section className="article-contact__title">
+      <section className="article-contact__title" ref={contactTitleRef}>
         <h1 className="heading-one u-margin-bottom-medium">Contact</h1>
       </section>
 
-      <section className="article-contact__img">
+      <section className="article-contact__img" ref={contactImgRef}>
         <h2 className="heading-two">
           We here to <span>help and answer</span> any questions you might have.
         </h2>
@@ -23,7 +33,7 @@ export default function services() {
           height={225}
         />
 
-        <section className="article-contact__details">
+        <section className="article-contact__details" ref={contactDetailsRef}>
           <section className="phone">
             <h3 className=" align-items u-margin-bottom-small">
               <FaPhone className="align-items__icon" /> Phone
@@ -43,7 +53,7 @@ export default function services() {
         </section>
       </section>
 
-      <section className="article-contact__form">
+      <section className="article-contact__form" ref={contactFormRef}>
         <form action="/action_page.php" className="form">
           <label htmlFor="fname">First Name</label>
           <input

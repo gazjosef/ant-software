@@ -1,7 +1,5 @@
 import { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsapFadeIn } from "../../components/Animations";
 import {
   FaBriefcase,
   FaShoppingCart,
@@ -10,16 +8,24 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 
-export default function services() {
+export default function Services() {
+  const servicesTitleRef = useRef(null);
+  const servicesGridRef = useRef(null);
+
+  useEffect(() => {
+    gsapFadeIn(servicesTitleRef, 0.3);
+    gsapFadeIn(servicesGridRef, 0.3);
+  }, []);
+
   return (
     <article id="services" className="article-services">
-      <section className="article-services__title">
+      <section className="article-services__title" ref={servicesTitleRef}>
         <h1 className="heading-one">Services</h1>
         <h2 className="heading-two">
           We provide <span>professional IT solutions</span> for your business.
         </h2>
       </section>
-      <section className="article-services__grid">
+      <section className="article-services__grid" ref={servicesGridRef}>
         <div className="feature-box">
           <FaBriefcase size={70} className="u-margin-bottom-medium" />
           <h2 className="feature-box__title u-margin-bottom-small">

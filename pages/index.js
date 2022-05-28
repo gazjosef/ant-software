@@ -1,7 +1,7 @@
-import Hero from "./articles/hero";
-import About from "./articles/about";
-import Services from "./articles/services";
-import Contact from "./articles/contact";
+import Hero from "./articles/Hero";
+import About from "./articles/About";
+import Services from "./articles/Services";
+import Contact from "./articles/Contact";
 
 export default function Home() {
   return (
