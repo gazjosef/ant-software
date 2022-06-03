@@ -8,6 +8,10 @@
   @include respond(tab-land) {
     padding: 7.5rem 15rem;
   }
+
+  @include respond(tab-port) {
+    padding: 5rem 10rem;
+  }
 }
 
 .article-home {
@@ -55,40 +59,37 @@
   grid-gap: 3rem;
 
   @include respond(tab-land) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   & > * {
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    place-content: center;
+    text-align: center;
   }
 
   &__title {
     grid-column: 1 / -1;
 
-    text-align: center;
+    @include respond(tab-land) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__image {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
-
-    @include respond(phone) {
-      grid-column: 1 / -1;
-    }
   }
 
   &__text {
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
 
-    display: flex;
-    align-items: center;
-
     p {
       max-width: 45ch;
     }
 
-    @include respond(phone) {
+    @include respond(tab-land) {
       grid-row: 3 / span 1;
       grid-column: 1 / -1;
     }
@@ -122,11 +123,11 @@
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
     grid-gap: 2rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    @include respond(phone) {
+    @include respond(tab-land) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
@@ -137,15 +138,19 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 
+  @include respond(tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   & > * {
     display: grid;
     place-content: center;
+    text-align: center;
   }
 
   &__title {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
-    text-align: center;
+    grid-column: 1 / -1;
   }
 
   &__img {
@@ -158,6 +163,11 @@
 
     text-align: center;
     font-size: 0.9em;
+
+    @include respond(tab-land) {
+      grid-column: 1 / -1;
+      // grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__form {
@@ -166,6 +176,11 @@
 
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
+
+    @include respond(tab-land) {
+      grid-row: 3 / span 1;
+      grid-column: 1 / -1;
+    }
   }
 
   &__details {
@@ -182,6 +197,13 @@
     h3 {
       color: $color-primary-200;
       text-transform: uppercase;
+      text-align: center;
+    }
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }
