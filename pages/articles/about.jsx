@@ -8,7 +8,6 @@ export default function About() {
   const aboutTextRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(aboutTitleRef, 0.5);
     gsapFadeIn(aboutImageRef, 0.3);
     gsapFadeIn(aboutTextRef, 0.5);
   }, []);
@@ -26,8 +25,8 @@ export default function About() {
         <Image
           src="/img/illustrations/undraw_developer_activity_bv83.svg"
           alt="Developer Activity"
-          width={400}
-          height={300}
+          width={800}
+          height={600}
         />
       </section>
 

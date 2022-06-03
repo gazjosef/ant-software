@@ -13,6 +13,16 @@ export default function Hero() {
 
   return (
     <article id="home" className="article-home">
+      <section className="article-home__img" ref={homeImgRef}>
+        <Image
+          className="article-home__img"
+          src="/img/illustrations/undraw_responsive_6c8s.svg"
+          alt="responsive"
+          width={1000}
+          height={700}
+        />
+      </section>
+
       <section className="article-home__text" ref={homeTextRef}>
         <h2 className="heading-two">
           Get scalable, modern and reliable <span>custom software</span>
@@ -24,16 +34,6 @@ export default function Hero() {
           corporis.
         </p>
         <button className="article-home__btn btn">Enquire Now</button>
-      </section>
-
-      <section className="article-home__img" ref={homeImgRef}>
-        <Image
-          className="article-home__img"
-          src="/img/illustrations/undraw_responsive_6c8s.svg"
-          alt="responsive"
-          width={500}
-          height={350}
-        />
       </section>
     </article>
   );

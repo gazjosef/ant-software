@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import { gsapFadeIn } from "../../components/Animations";
+import { gsapFadeIn, gsapFadeInStagger } from "../../components/Animations";
 import {
   FaBriefcase,
   FaShoppingCart,
@@ -13,8 +13,8 @@ export default function Services() {
   const servicesGridRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(servicesTitleRef, 0.3);
     gsapFadeIn(servicesGridRef, 0.3);
+    // gsapFadeInStagger(servicesGridRef, 0.3, 2);
   }, []);
 
   return (

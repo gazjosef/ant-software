@@ -3,10 +3,10 @@
 .article-services,
 .article-contact {
   min-height: 100vh;
-  padding: 15rem 20rem 10rem;
+  padding: 10rem 20rem;
 
   @include respond(tab-land) {
-    padding: 7.5rem 10rem 5rem;
+    padding: 7.5rem 15rem;
   }
 }
 
@@ -15,11 +15,12 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3.5rem;
+  column-gap: 3.5rem;
   place-items: center;
 
   &__text {
     grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
 
     font-size: 2rem;
     max-width: 45ch;
@@ -28,7 +29,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       grid-column: 1 / -1;
       grid-row: 2 / span 1;
     }
@@ -40,10 +41,10 @@
 
   &__img {
     grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       grid-column: 1 / -1;
-      grid-row: 1 / span 1;
     }
   }
 }
@@ -51,9 +52,9 @@
 .article-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 
   @include respond(tab-land) {
-    grid-gap: 2rem;
   }
 
   & > * {
@@ -177,5 +178,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    h3 {
+      color: $color-primary-200;
+      text-transform: uppercase;
+    }
   }
 }

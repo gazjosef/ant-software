@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRef, useEffect } from "react";
-import { gsapFadeIn } from "../../components/Animations";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { gsapFadeIn } from "../../components/Animations";
 
 export default function Contact() {
   const contactTitleRef = useRef(null);
@@ -10,7 +10,7 @@ export default function Contact() {
   const contactFormRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(contactTitleRef, 0.3);
+    // gsapFadeIn(contactTitleRef, 0.3);
     gsapFadeIn(contactImgRef, 0.3);
     gsapFadeIn(contactDetailsRef, 0.3);
     gsapFadeIn(contactFormRef, 0.3);
@@ -22,10 +22,11 @@ export default function Contact() {
         <h1 className="heading-one u-margin-bottom-medium">Contact</h1>
       </section>
 
-      <section className="article-contact__img" ref={contactImgRef}>
+      <section className="article-contact__img" ref={contactDetailsRef}>
         <h2 className="heading-two">
           We here to <span>help and answer</span> any questions you might have.
         </h2>
+
         <Image
           src="/img/illustrations/undraw_programming_2svr.svg"
           alt="responsive"
@@ -33,7 +34,7 @@ export default function Contact() {
           height={225}
         />
 
-        <section className="article-contact__details" ref={contactDetailsRef}>
+        <section className="article-contact__details">
           <section className="phone">
             <h3 className=" align-items u-margin-bottom-small">
               <FaPhone className="align-items__icon" /> Phone
