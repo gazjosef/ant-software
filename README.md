@@ -21,7 +21,7 @@ Register new user, login existing user or select demo to sign in directly
 - Redux
 - Sass
 - 
-## GitHub Page
+## Heroku Page
 
 ## Author
 Gareth Hind
