@@ -20,7 +20,7 @@ Register new user, login existing user or select demo to sign in directly
 - React
 - Redux
 - Sass
-- 
+
 ## Heroku Page
 
 ## Author
