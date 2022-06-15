@@ -1,7 +1,7 @@
-import Hero from "./articles/Hero";
-import About from "./articles/About";
-import Services from "./articles/Services";
-import Contact from "./articles/Contact";
+import Hero from "@/articles/Hero";
+import About from "@/articles/About";
+import Services from "@/articles/Services";
+import Contact from "@/articles/Contact";
 
 import ScrollButton from "@/components/Button/ScrollButton";
 
