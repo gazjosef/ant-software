@@ -20,8 +20,8 @@ export const Footer = () => {
           className="logo"
         />
         <p className="quote">
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-          mollitia id aperiam."
+          &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+          mollitia id aperiam.&quot;
         </p>
       </section>
 
