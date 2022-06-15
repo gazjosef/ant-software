@@ -1,6 +1,6 @@
-module.exports = {
-  experimental: {
-    optimizeFonts: true,
-    optimizeImages: true,
-  },
-};
+// module.exports = {
+//   experimental: {
+//     optimizeFonts: true,
+//     optimizeImages: true,
+//   },
+// };
