@@ -40,6 +40,7 @@
   }
 
   &__nav-links {
+    width: 100%;
     grid-column: 3 / -1;
 
     display: grid;
@@ -47,6 +48,7 @@
 
     & > * {
       margin-top: 2rem;
+      padding: 0 5rem;
     }
 
     @include respond(tab-port) {
