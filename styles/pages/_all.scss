@@ -1,0 +1,15 @@
+.article-home,
+.article-about,
+.article-services,
+.article-contact {
+  min-height: 100vh;
+  padding: 10rem 20rem;
+
+  @include respond(tab-land) {
+    padding: 7.5rem 15rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 5rem 10rem;
+  }
+}
