@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { gsapFadeIn } from "@/components/Animations";
@@ -33,7 +34,13 @@ export default function Hero() {
           eligendi? Facere corrupti commodi sapiente maiores, voluptatibus
           corporis.
         </p>
-        <button className="article-home__btn btn">Enquire Now</button>
+        <Link href="#contact">
+          <button className="btn btn-moving-gradient btn-moving-gradient--blue">
+            Enquire Now
+          </button>
+
+          {/* <button className="article-home__btn btn">Enquire Now</button> */}
+        </Link>
       </section>
     </article>
   );
