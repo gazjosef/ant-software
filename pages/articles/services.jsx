@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import { gsapFadeIn, gsapFadeInStagger } from "../../components/Animations";
+import { gsapFadeIn, gsapFadeInStagger } from "@/components/Animations";
 import {
   FaBriefcase,
   FaShoppingCart,

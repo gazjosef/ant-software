@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRef, useEffect } from "react";
-import { gsapFadeIn } from "../../components/Animations";
+import { gsapFadeIn } from "@/components/Animations";
 
 export default function About() {
   const aboutTitleRef = useRef(null);

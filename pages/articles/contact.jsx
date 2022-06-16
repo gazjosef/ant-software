@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { gsapFadeIn } from "../../components/Animations";
+import { gsapFadeIn } from "@/components/Animations";
 
 export default function Contact() {
   const contactTitleRef = useRef(null);
