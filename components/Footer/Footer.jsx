@@ -28,7 +28,7 @@ export const Footer = () => {
       <section className="footer__nav-links">
         <section>
           <h2 className="footer__header u-margin-bottom-small">Nav Links</h2>
-          <ul className="nav">
+          <ul role="list" className="nav">
             <li className="nav__item">
               <a href="#home" className="nav__link">
                 Home
@@ -47,32 +47,6 @@ export const Footer = () => {
             <li className="nav__item">
               <a href="#contact" className="nav__link">
                 Contact
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="footer__header u-margin-bottom-small">Social Media</h2>
-          <ul className="nav">
-            <li className="nav__item">
-              <a href="#home" className="nav__link">
-                <FaFacebook /> Facebook
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#about" className="nav__link">
-                <FaInstagram /> Instagram
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#services" className="nav__link">
-                <FaLinkedin /> LinkedIn
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#contact" className="nav__link">
-                <FaTwitter /> Twitter
               </a>
             </li>
           </ul>

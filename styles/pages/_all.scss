@@ -13,3 +13,19 @@
     padding: 5rem 10rem;
   }
 }
+
+.section-home,
+.section-about,
+.section-services,
+.section-contact {
+  min-height: 100vh;
+  padding: 10rem 20rem;
+
+  @include respond(tab-land) {
+    padding: 7.5rem 15rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 5rem 10rem;
+  }
+}

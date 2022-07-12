@@ -6,6 +6,20 @@ body {
   line-height: 1.7;
 }
 
+.primary-heading {
+  color: $color-black-800;
+  font-family: $ff-primary;
+  font-size: $fs-850;
+  font-weight: $fw-bold;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+}
+
 .heading-one {
   margin-bottom: 5rem;
 

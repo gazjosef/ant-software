@@ -29,6 +29,7 @@ function ScrollButton() {
 
   return (
     <button className="scrollButton">
+      Back To Top
       <IconContext.Provider value={{ className: "scrollButton__icon" }}>
         <FaArrowCircleUp
           onClick={scrollToTop}
