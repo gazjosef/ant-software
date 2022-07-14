@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { gsapFadeIn } from "@/components/Animations";
 
-// import Services from "@/articles/services";
+import Services from "@/articles/services";
 
 import ScrollButton from "@/components/Button/ScrollButton";
 
@@ -42,8 +42,8 @@ export default function Home() {
           </h1>
 
           <p className="paragraph">
-            We develop web, mobile and custom software that's tailor-made to
-            capture all your unique and essential requirements.
+            We develop web, mobile and custom software that&apos;s tailor-made
+            to capture all your unique and essential requirements.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <Services /> */}
+      <Services />
 
       <section id="contact" className="section-contact">
         <div className="section-contact__title" ref={contactTitleRef}>
