@@ -7,27 +7,31 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Image from "next/image";
+import { IconContext } from "react-icons";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer
+      className="
+        footer 
+        u-bg-primary-300 
+        u-text-color-white-200"
+    >
       <section className="footer__logo">
         <Image
           src="/img/white-logo.png"
           alt="Ant Software"
-          height="446.5"
-          width="1575"
+          height="111.625"
+          width="393.75"
           className="logo"
         />
-        <p className="quote">
-          &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-          mollitia id aperiam.&quot;
-        </p>
       </section>
 
       <section className="footer__nav-links">
-        <section>
-          <h2 className="footer__header u-margin-bottom-small">Nav Links</h2>
+        <div>
+          <h2 className="u-text-color-secondary-300 u-margin-bottom-small">
+            Nav Links
+          </h2>
           <ul role="list" className="nav">
             <li className="nav__item">
               <a href="#home" className="nav__link">
@@ -50,29 +54,37 @@ export const Footer = () => {
               </a>
             </li>
           </ul>
-        </section>
+        </div>
 
-        <section className="footer__contact-details">
-          <h2 className="footer__header u-margin-bottom-small">Contact</h2>
-          <section>
-            <p>
-              <FaPhone /> Phone
-            </p>
-            <p className="u-margin-bottom-small">0499 884 088</p>
-          </section>
+        <div>
+          <h2 className="u-text-color-secondary-300 u-margin-bottom-small">
+            Contact
+          </h2>
+          <div className="u-align-items-center">
+            <IconContext.Provider
+              value={{ className: "u-align-items-center__icon" }}
+            >
+              <FaPhone />
+            </IconContext.Provider>
+            Phone
+          </div>
+          <p className="u-margin-bottom-small">0499 884 088</p>
 
-          <section>
-            <p>
-              <FaEnvelope /> Email
-            </p>
-            <p>ant@antsoftware.dev</p>
-          </section>
-        </section>
+          <div className="u-align-items-center">
+            <IconContext.Provider
+              value={{ className: "u-align-items-center__icon" }}
+            >
+              <FaEnvelope />
+            </IconContext.Provider>
+            Email
+          </div>
+          <p>ant@antsoftware.dev</p>
+        </div>
       </section>
 
-      <div className="footer__copyright">
+      <section className="footer__copyright u-center-text">
         Copyright <span>&copy;</span> Ant Software 2022
-      </div>
+      </section>
     </footer>
   );
 };

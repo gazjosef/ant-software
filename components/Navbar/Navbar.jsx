@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar u-bg-white-50">
       <div className="navbar__logo">
         <Link href="#home">
           <img src="/img/black-logo.png" alt="Logo" className="logo" />
