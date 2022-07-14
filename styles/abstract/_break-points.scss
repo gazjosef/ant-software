@@ -34,6 +34,11 @@ ORDER: Base + Typography > general layout + grid > page layout > components
       @content;
     } // 1200px
   }
+  @if $breakpoint == desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    } // 1200px
+  }
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
       @content;

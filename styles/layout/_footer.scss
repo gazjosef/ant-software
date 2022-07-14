@@ -1,75 +1,55 @@
 .footer {
-  background-color: $color-primary-300;
-  padding: 5rem 2rem 0;
+  padding: 5rem 20rem 0;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
-  color: $color-white-200;
+  grid-template-columns: repeat(2, 1fr);
 
   @include respond(tab-port) {
     display: block;
+    padding: 5rem 10rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 7.5rem 15rem;
   }
 
   a {
     color: $color-white;
   }
 
-  & > * {
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &__header {
-    color: $color-secondary-300;
-  }
-
   &__logo {
     padding: 0 5rem 2rem;
 
-    grid-column: 1 / span 2;
+    display: grid;
+    place-content: center;
 
     @include respond(tab-port) {
-      padding: 0 15rem 2rem;
-    }
-
-    @include respond(phone) {
-      padding: 0 5rem 2rem;
+      padding: 0 0 5rem;
     }
   }
 
   &__nav-links {
-    padding: 0 10rem;
-    width: 100%;
-    grid-column: 3 / -1;
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    & > * {
-      margin-top: 2rem;
-      padding: 0 5rem;
-    }
+    grid-template-columns: repeat(2, 1fr);
 
     @include respond(tab-port) {
-      padding: 0 5rem;
-      display: block;
+      font-size: $fs-300;
+    }
+
+    & > * {
+      margin-left: auto;
+      margin-right: auto;
+
       text-align: center;
     }
   }
 
-  // &__contact-details {
-  // }
-
   &__copyright {
     height: 8rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
-
-    text-align: center;
 
     span {
       margin-left: 0.75rem;

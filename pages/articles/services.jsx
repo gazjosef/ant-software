@@ -14,7 +14,6 @@ export default function Services() {
 
   useEffect(() => {
     gsapFadeIn(servicesGridRef, 0.3);
-    // gsapFadeInStagger(servicesGridRef, 0.3, 2);
   }, []);
 
   return (
@@ -32,8 +31,8 @@ export default function Services() {
             Custom Business Software
           </h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            dignissimos iste ducimus voluptatibus suscipit porro!
+            We specialise in creating custom business software and apps to
+            support growing companies.
           </p>
         </div>
 
@@ -43,8 +42,8 @@ export default function Services() {
             E-Commerce, Online Store Fronts
           </h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            dignissimos iste ducimus voluptatibus suscipit porro!
+            We create beautiful online stores and strategically-led shopping
+            experiences.
           </p>
         </div>
 
@@ -54,8 +53,8 @@ export default function Services() {
             Web Design
           </h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            dignissimos iste ducimus voluptatibus suscipit porro!
+            We analyze and implement designs that keeps users engaged without
+            overcrowding the screen.
           </p>
         </div>
 
@@ -63,8 +62,8 @@ export default function Services() {
           <FaSearch size={70} className="u-margin-bottom-medium" />
           <h2 className="feature-box__title u-margin-bottom-small">SEO</h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            dignissimos iste ducimus voluptatibus suscipit porro!
+            We improve your online presence in a manner that can grant more
+            exposure and increased user traffic.
           </p>
         </div>
 
@@ -74,8 +73,8 @@ export default function Services() {
             Consulting
           </h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            dignissimos iste ducimus voluptatibus suscipit porro!
+            We provide end-to-end digital consulting to help you grow your
+            business today.
           </p>
         </div>
       </section>

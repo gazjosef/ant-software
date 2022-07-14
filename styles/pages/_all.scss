@@ -13,3 +13,98 @@
     padding: 5rem 10rem;
   }
 }
+
+.section-home,
+.section-about,
+.section-services,
+.section-contact {
+  min-height: 100vh;
+  padding: 10rem 20rem;
+
+  @include respond(tab-land) {
+    padding: 7.5rem 15rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 5rem 10rem;
+  }
+}
+
+.section-home {
+  padding-top: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.5rem;
+  place-items: center;
+
+  @include respond(tab-land) {
+    display: block;
+    padding-top: 10rem;
+  }
+}
+
+.section-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  & > * {
+    display: grid;
+    place-items: center;
+  }
+
+  @include respond(tab-land) {
+    display: block;
+  }
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-column: 1 / -1;
+  }
+}
+
+.section-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+  @include respond(tab-land) {
+    display: block;
+  }
+
+  & > * {
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+  }
+
+  &__details {
+    margin-top: 3rem;
+
+    // grid-row: 3 / span 1;
+    // grid-column: 1 / span 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    // h3 {
+    //   color: $color-primary-200;
+    //   text-transform: uppercase;
+    //   text-align: center;
+    // }
+
+    // @include respond(tab-land) {
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: space-between;
+    // }
+  }
+}

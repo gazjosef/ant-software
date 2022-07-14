@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar u-bg-white-50">
       <div className="navbar__logo">
         <Link href="#home">
           <img src="/img/black-logo.png" alt="Logo" className="logo" />
@@ -28,7 +28,10 @@ function Navbar() {
           )}
         </IconContext.Provider>
       </div>
-      <ul className={toggle ? "navbar__menu active" : "navbar__menu"}>
+      <ul
+        role="list"
+        className={toggle ? "navbar__menu active" : "navbar__menu"}
+      >
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>

@@ -1,9 +1,36 @@
 body {
   color: $color-black-900;
-  font-family: $font-primary;
+  font-family: $ff-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
+}
+
+.primary-heading {
+  max-width: 35ch;
+
+  font-size: $fs-850;
+  font-weight: $fw-semi-bold;
+
+  @include respond(phone) {
+    font-size: $fs-750;
+  }
+
+  @include respond(tab-land) {
+    font-size: $fs-800;
+  }
+}
+
+.secondary-heading {
+  font-family: $ff-secondary;
+  font-size: $fs-850;
+  font-weight: $fw-bold;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: $fs-800;
+  }
 }
 
 .heading-one {
@@ -43,11 +70,11 @@ body {
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  max-width: 45ch;
+
+  font-size: $fs-700;
   line-height: 2;
   text-align: justify;
-  max-width: 45ch;
-  font-size: 2rem;
 
   @include respond(phone) {
     font-size: 1.75rem;
