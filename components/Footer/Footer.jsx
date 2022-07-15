@@ -23,8 +23,22 @@ export const Footer = () => {
           alt="Ant Software"
           height="111.625"
           width="393.75"
-          className="logo"
+          className="logo u-margin-bottom-small"
         />
+        <div className="footer__social">
+          <a href="www.facebook.com">
+            <FaFacebook />
+          </a>
+          <a href="www.instagram.com">
+            <FaInstagram />
+          </a>
+          <a href="www.linkedin.com">
+            <FaLinkedin />
+          </a>
+          <a href="www.twitter.com">
+            <FaTwitter />
+          </a>
+        </div>
       </section>
 
       <section className="footer__nav-links">
@@ -70,7 +84,7 @@ export const Footer = () => {
           </div>
           <p className="u-margin-bottom-small">0499 884 088</p>
 
-          <div className="u-align-items-center">
+          <div className="u-align-items-center ">
             <IconContext.Provider
               value={{ className: "u-align-items-center__icon" }}
             >
@@ -83,7 +97,8 @@ export const Footer = () => {
       </section>
 
       <section className="footer__copyright u-center-text">
-        Copyright <span>&copy;</span> Ant Software 2022
+        Copyright <span className="u-text-color-secondary-300">&copy;</span> Ant
+        Software 2022
       </section>
     </footer>
   );

@@ -66,6 +66,43 @@
   }
 }
 
+.section-services {
+  // background-color: $color-primary-50;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  &__grid {
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    grid-gap: 2rem;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}
+
 .section-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
