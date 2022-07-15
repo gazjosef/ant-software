@@ -189,7 +189,7 @@ export default function Home() {
               <h3 className=" align-items u-margin-bottom-small">
                 <FaPhone className="align-items__icon" /> Phone
               </h3>
-              <p className="paragraph u-center-text">
+              <p className="paragraph u-center-text u-text-color-black-800">
                 <span>0499 884 088</span>
               </p>
             </div>
@@ -197,7 +197,7 @@ export default function Home() {
               <h3 className="align-items u-margin-bottom-small">
                 <FaEnvelope className="align-items__icon" /> Email
               </h3>
-              <p className="paragraph">
+              <p className="paragraph u-text-color-black-800">
                 <span>ant@antsoftware.dev</span>
               </p>
             </div>

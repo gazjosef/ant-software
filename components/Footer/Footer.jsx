@@ -23,7 +23,7 @@ export const Footer = () => {
           alt="Ant Software"
           height="111.625"
           width="393.75"
-          className="logo u-margin-bottom-small"
+          className="u-margin-bottom-small"
         />
         <div className="footer__social">
           <a href="www.facebook.com">
