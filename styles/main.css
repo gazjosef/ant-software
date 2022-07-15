@@ -393,13 +393,19 @@ body {
   border: none;
   background-size: 300% 100%;
   border-radius: 5px;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 600;
-  color: rgb(255, 255, 255);
 }
 .btn-moving-gradient:hover {
   transition: all 0.5s ease-in-out 0s;
   background-position: 100% 0px;
+}
+.btn-moving-gradient a {
+  color: rgb(255, 255, 255);
+}
+.btn-moving-gradient a:focus, .btn-moving-gradient a:visited {
+  color: rgb(255, 255, 255);
 }
 .btn-moving-gradient--blue {
   background-image: linear-gradient(90deg, rgb(61, 135, 255), rgb(190, 61, 255), rgb(126, 61, 255), hsl(219deg, 100%, 63%));

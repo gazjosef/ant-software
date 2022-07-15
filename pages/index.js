@@ -54,6 +54,10 @@ export default function Home() {
             We develop web, mobile and custom software that&apos;s tailor-made
             to capture all your unique and essential requirements.
           </p>
+
+          <button className="btn btn-moving-gradient btn-moving-gradient--blue">
+            <a href="#contact">Enquire Now</a>
+          </button>
         </div>
 
         <div ref={homeImgRef}>
