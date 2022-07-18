@@ -40,7 +40,16 @@ export default function Home() {
   return (
     <div className="container">
       <section id="home" className="section-home u-bg-primary-50">
-        <div ref={homeTextRef}>
+        <div ref={homeImgRef} className="section-home__img">
+          <Image
+            src="/img/illustrations/undraw_responsive_6c8s.svg"
+            alt="responsive"
+            width={1000}
+            height={700}
+          />
+        </div>
+
+        <div ref={homeTextRef} className="section-home__text">
           <h1
             className="
                 primary-heading 
@@ -58,16 +67,6 @@ export default function Home() {
           <button className="btn btn-moving-gradient btn-moving-gradient--blue">
             <a href="#contact">Enquire Now</a>
           </button>
-        </div>
-
-        <div ref={homeImgRef}>
-          <Image
-            className="article-home__img"
-            src="/img/illustrations/undraw_responsive_6c8s.svg"
-            alt="responsive"
-            width={1000}
-            height={700}
-          />
         </div>
       </section>
 
