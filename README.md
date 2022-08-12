@@ -1,6 +1,6 @@
 ## Footy Tips
 
-## Description
+## About This Project
 
 An office tipping app for friends or work colleagues.
 
@@ -9,17 +9,19 @@ Includes:
 - Fixture database to get upcoming fixtures or past results
 - Tip database to store user tips and check overall score
 
-## How to use
-
-Register new user, login existing user or select demo to sign in directly
-
-## Built-With
+# Built-With
 
 - MongoDB
 - Express
 - React
 - Redux
 - Sass
+
+## How to use
+
+Register new user, login existing user or select demo to sign in directly
+
+
 
 ## Heroku Page
 
