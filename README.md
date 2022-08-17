@@ -1,29 +1,7 @@
-## Footy Tips
-
-## About This Project
-
-An office tipping app for friends or work colleagues.
-
-Includes:
-- User database to sign in and sign out
-- Fixture database to get upcoming fixtures or past results
-- Tip database to store user tips and check overall score
 
 ### Built-With
 
-- MongoDB
-- Express
-- React
-- Redux
-- Sass
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+- ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-## How to use
-
-Register new user, login existing user or select demo to sign in directly
-
-
-
-## Heroku Page
-
-## Author
-Gareth Hind
