@@ -82,7 +82,7 @@ export const Footer = () => {
             </IconContext.Provider>
             Phone
           </div>
-          <p className="u-margin-bottom-small">0499 884 088</p>
+          <p className="u-margin-bottom-small">0434 420 506</p>
 
           <div className="u-align-items-center ">
             <IconContext.Provider
