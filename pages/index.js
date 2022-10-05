@@ -92,7 +92,7 @@ export default function Home() {
 
         <div className="section-about__text" ref={aboutTextRef}>
           <p className="paragraph">
-            Founded in 2006, Ant Software is a web development company that
+            Founded in 2016, Ant Software is a web development company that
             helps clients meet the challenges of the digital age. We specialize
             in brand design, web design and development, and custom software.
           </p>
@@ -193,7 +193,7 @@ export default function Home() {
                 <FaPhone className="align-items__icon" /> Phone
               </h3>
               <p className="paragraph u-center-text u-text-color-black-800">
-                <span>0499 884 088</span>
+                <span>0434 420 506</span>
               </p>
             </div>
             <div className="email">
