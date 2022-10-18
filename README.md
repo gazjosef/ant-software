@@ -52,11 +52,6 @@ A professional website showcasing the services, skills and work of Ant Software.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Designed responsive mock ups and designs using Figma.
-
-Designed layout using SASS.
-
-Improved user accessability by adhering to Web Content Accessibility Guidelines (WCAG) 2
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
