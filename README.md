@@ -18,7 +18,7 @@
     <img src="/public/img/favicon_io/android-chrome-512x512.png" alt="Logo" width="250" height="250">
   </a>
 
-<h3 align="center">Weather App</h3>
+<h3 align="center">Ant Software</h3>
 
   <p align="center">
 A professional website showcasing the services, skills and work of Ant Software.
