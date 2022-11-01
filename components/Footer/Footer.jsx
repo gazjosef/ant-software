@@ -11,12 +11,7 @@ import { IconContext } from "react-icons";
 
 export const Footer = () => {
   return (
-    <footer
-      className="
-        footer 
-        u-bg-primary-300 
-        u-text-color-white-200"
-    >
+    <footer className="footer | u-bg-primary-300 u-text-color-white-200">
       <section className="footer__logo">
         <Image
           src="/img/white-logo.png"
@@ -25,6 +20,7 @@ export const Footer = () => {
           width="393.75"
           className="u-margin-bottom-small"
         />
+
         <div className="footer__social">
           <a href="www.facebook.com">
             <FaFacebook />
