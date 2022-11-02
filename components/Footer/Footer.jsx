@@ -39,7 +39,7 @@ export const Footer = () => {
 
       <section className="footer__nav-links">
         <div>
-          <h2 className="u-text-color-secondary-300 u-margin-bottom-small">
+          <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
             Nav Links
           </h2>
           <ul role="list" className="nav">
@@ -67,28 +67,14 @@ export const Footer = () => {
         </div>
 
         <div>
-          <h2 className="u-text-color-secondary-300 u-margin-bottom-small">
+          <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
             Contact
           </h2>
-          <div className="u-align-items-center">
-            <IconContext.Provider
-              value={{ className: "u-align-items-center__icon" }}
-            >
-              <FaPhone />
-            </IconContext.Provider>
-            Phone
-          </div>
-          <p className="u-margin-bottom-small">0434 420 506</p>
 
-          <div className="u-align-items-center ">
-            <IconContext.Provider
-              value={{ className: "u-align-items-center__icon" }}
-            >
-              <FaEnvelope />
-            </IconContext.Provider>
-            Email
-          </div>
-          <p>ant@antsoftware.dev</p>
+          <ul role="list" className="nav">
+            <li className="nav__item">0434 420 506</li>
+            <li className="nav__item">ant@antsoftware.dev</li>
+          </ul>
         </div>
       </section>
 
