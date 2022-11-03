@@ -125,22 +125,7 @@
   &__details {
     margin-top: 3rem;
 
-    // grid-row: 3 / span 1;
-    // grid-column: 1 / span 2;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    // h3 {
-    //   color: $color-primary-200;
-    //   text-transform: uppercase;
-    //   text-align: center;
-    // }
-
-    // @include respond(tab-land) {
-    //   flex-direction: column;
-    //   align-items: center;
-    //   justify-content: space-between;
-    // }
   }
 }
