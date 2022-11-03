@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <section id="home" className="section-home u-bg-primary-50">
+      <section id="home" className="section-home | u-bg-primary-50">
         <div ref={homeImgRef} className="section-home__img">
           <Image
             src="/img/illustrations/undraw_responsive_6c8s.svg"
@@ -50,11 +50,7 @@ export default function Home() {
         </div>
 
         <div ref={homeTextRef} className="section-home__text">
-          <h1
-            className="
-                primary-heading 
-                u-margin-bottom-small"
-          >
+          <h1 className="primary-heading | u-margin-bottom-small">
             Get scalable, modern and reliable{" "}
             <span className="u-text-span">custom software</span>.
           </h1>
@@ -72,7 +68,7 @@ export default function Home() {
 
       <section id="about" className="section-about">
         <div className="section-about__title" ref={aboutTitleRef}>
-          <h2 className="secondary-heading u-text-color-secondary-300">
+          <h2 className="secondary-heading | u-text-color-secondary-300">
             About Us
           </h2>
           <h1 className="primary-heading u-center-text">
@@ -99,12 +95,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="section-services u-bg-primary-50">
+      <section id="services" className="section-services | u-bg-primary-50">
         <div className="section-services__title" ref={servicesTitleRef}>
-          <h2 className="secondary-heading u-text-color-secondary-300 u-margin-bottom-medium">
+          <h2 className="secondary-heading | u-text-color-secondary-300 u-margin-bottom-medium">
             Services
           </h2>
-          <h1 className="primary-heading u-center-text">
+          <h1 className="primary-heading | u-center-text">
             We provide{" "}
             <span className="u-text-span">professional IT solutions</span> for
             your business.
@@ -114,7 +110,7 @@ export default function Home() {
         <section className="section-services__grid" ref={servicesGridRef}>
           <div className="feature-box">
             <FaBriefcase size={70} className="u-margin-bottom-medium" />
-            <h2 className="feature-box__title u-margin-bottom-small">
+            <h2 className="feature-box__title | u-margin-bottom-small">
               Custom Business Software
             </h2>
             <p className="paragraph">
@@ -125,7 +121,7 @@ export default function Home() {
 
           <div className="feature-box">
             <FaShoppingCart size={70} className="u-margin-bottom-medium" />
-            <h2 className="feature-box__title u-margin-bottom-small">
+            <h2 className="feature-box__title | u-margin-bottom-small">
               E-Commerce, Online Store Fronts
             </h2>
             <p className="paragraph">
@@ -136,7 +132,7 @@ export default function Home() {
 
           <div className="feature-box">
             <FaPalette size={70} className="u-margin-bottom-medium" />
-            <h2 className="feature-box__title u-margin-bottom-small">
+            <h2 className="feature-box__title | u-margin-bottom-small">
               Web Design
             </h2>
             <p className="paragraph">
@@ -147,7 +143,7 @@ export default function Home() {
 
           <div className="feature-box">
             <FaSearch size={70} className="u-margin-bottom-medium" />
-            <h2 className="feature-box__title u-margin-bottom-small">SEO</h2>
+            <h2 className="feature-box__title | u-margin-bottom-small">SEO</h2>
             <p className="paragraph">
               We improve your online presence in a manner that can grant more
               exposure and increased user traffic.
@@ -156,7 +152,7 @@ export default function Home() {
 
           <div className="feature-box">
             <FaChalkboardTeacher size={70} className="u-margin-bottom-medium" />
-            <h2 className="feature-box__title u-margin-bottom-small">
+            <h2 className="feature-box__title | u-margin-bottom-small">
               Consulting
             </h2>
             <p className="paragraph">
@@ -169,13 +165,13 @@ export default function Home() {
 
       <section id="contact" className="section-contact">
         <div className="section-contact__title" ref={contactTitleRef}>
-          <h2 className="secondary-heading u-text-color-secondary-300 u-margin-bottom-medium">
+          <h2 className="secondary-heading | u-text-color-secondary-300 u-margin-bottom-medium">
             Contact
           </h2>
         </div>
 
         <div className="section-contact__img" ref={contactDetailsRef}>
-          <h1 className="primary-heading u-center-text">
+          <h1 className="primary-heading | u-center-text">
             We here to <span className="u-text-span">help and answer</span> any
             questions you might have.
           </h1>
@@ -188,11 +184,11 @@ export default function Home() {
           />
 
           <section className="section-contact__details">
-            <div className="phone u-margin-bottom-medium">
+            <div className="phone | u-margin-bottom-medium">
               <h3 className=" align-items u-margin-bottom-small">
                 <FaPhone className="align-items__icon" /> Phone
               </h3>
-              <p className="paragraph u-center-text u-text-color-black-800">
+              <p className="paragraph | u-center-text u-text-color-black-800">
                 <span>0434 420 506</span>
               </p>
             </div>
@@ -200,7 +196,7 @@ export default function Home() {
               <h3 className="align-items u-margin-bottom-small">
                 <FaEnvelope className="align-items__icon" /> Email
               </h3>
-              <p className="paragraph u-text-color-black-800">
+              <p className="paragraph | u-text-color-black-800">
                 <span>ant@antsoftware.dev</span>
               </p>
             </div>
