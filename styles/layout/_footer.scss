@@ -14,7 +14,7 @@
   }
 
   @include respond(phone) {
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 5rem 0;
   }
 
   a {
@@ -48,6 +48,11 @@
   &__nav-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include respond(tab-port) {
+      grid-row: 2 / span 1;
+      font-size: $fs-300;
+    }
 
     @include respond(tab-port) {
       grid-row: 2 / span 1;
