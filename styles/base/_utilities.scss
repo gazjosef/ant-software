@@ -29,7 +29,9 @@
   }
 }
 
+////////////////////
 //* Background Color
+////////////////////
 
 .u-bg-primary-50 {
   background-color: $color-primary-50;
@@ -88,6 +90,9 @@
   //   width: 117rem;
   // }
 }
+////////////////////////
+//* FONT
+/// ////////////////////
 
 //* Font Size
 
@@ -137,7 +142,17 @@
   font-weight: $fw-regular;
 }
 
+////////////////////
+// * GRID
+////////////////////
+
+.u-grid {
+  display: grid;
+}
+
+////////////////////
 //* Margin
+////////////////////
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
@@ -171,7 +186,9 @@
   margin-top: 10rem !important;
 }
 
+////////////////////
 //* Text Color
+////////////////////
 
 .u-text-color-black {
   color: $color-black;
