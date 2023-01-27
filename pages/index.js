@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { gsapFadeIn } from "@/components/Animations";
 
-import ScrollButton from "@/components/Button/ScrollButton";
+import ScrollButton from "@/components/UI/Button/ScrollButton";
 
 export default function Home() {
   const homeTextRef = useRef(null);
