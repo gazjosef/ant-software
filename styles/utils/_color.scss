@@ -2,45 +2,52 @@
 
 // BACKGROUNDS
 
-.u-bg-white {
-  background-color: $clr-white;
-}
-
-.u-bg-white-100 {
-  background-color: $clr-white-100;
-}
-
-.u-bg-primary-200 {
-  background-color: $clr-primary-200;
+.u-bg-primary-50 {
+  background-color: $color-primary-50;
 }
 
 .u-bg-primary-300 {
-  background-color: $clr-primary-300;
+  background-color: $color-primary-300;
 }
 
-.u-bg-black {
-  background-color: $clr-black;
-}
-
-.u-bg-gradient {
-  background-image: linear-gradient($clr-primary-200, $clr-primary-100);
-  z-index: -999;
+.u-bg-white-50 {
+  background-color: $color-white-50;
 }
 
 // TEXT
 
-.u-text-white {
-  color: $clr-white;
+.u-text-color-black {
+  color: $color-black;
 }
 
-.u-text-black {
-  color: $clr-black;
+.u-text-color-black-800 {
+  color: $color-black-800;
 }
 
-.u-text-primary-100 {
-  color: $clr-primary-100;
+.u-text-color-white {
+  color: $color-white;
 }
 
-.u-text-primary-200 {
-  color: $clr-primary-200;
+.u-text-color-white-50 {
+  color: $color-white-50;
+}
+
+.u-text-color-white-200 {
+  color: $color-white-200;
+}
+
+.u-text-color-secondary-300 {
+  color: $color-secondary-300;
+}
+
+.u-text-color-secondary-350 {
+  color: $color-secondary-350;
+}
+
+.u-text-primary-50 {
+  color: $color-primary-50;
+}
+
+.u-text-span {
+  color: $color-primary-200;
 }

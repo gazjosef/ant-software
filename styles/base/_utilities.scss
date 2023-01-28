@@ -29,22 +29,6 @@
   }
 }
 
-////////////////////
-//* Background Color
-////////////////////
-
-.u-bg-primary-50 {
-  background-color: $color-primary-50;
-}
-
-.u-bg-primary-300 {
-  background-color: $color-primary-300;
-}
-
-.u-bg-white-50 {
-  background-color: $color-white-50;
-}
-
 //* Center Text
 
 .u-center-text {
@@ -183,44 +167,4 @@
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
-}
-
-////////////////////
-//* Text Color
-////////////////////
-
-.u-text-color-black {
-  color: $color-black;
-}
-
-.u-text-color-black-800 {
-  color: $color-black-800;
-}
-
-.u-text-color-white {
-  color: $color-white;
-}
-
-.u-text-color-white-50 {
-  color: $color-white-50;
-}
-
-.u-text-color-white-200 {
-  color: $color-white-200;
-}
-
-.u-text-color-secondary-300 {
-  color: $color-secondary-300;
-}
-
-.u-text-color-secondary-350 {
-  color: $color-secondary-350;
-}
-
-.u-text-primary-50 {
-  color: $color-primary-50;
-}
-
-.u-text-span {
-  color: $color-primary-200;
 }
