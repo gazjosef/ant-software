@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Header = () => {
-  return <header className="header">Header</header>;
+  return <header className="header | "></header>;
 };
 
 export default Header;
