@@ -1,0 +1,45 @@
+import Image from "next/image";
+import { useRef, useEffect } from "react";
+import { gsapFadeIn } from "@/components/Animations";
+import Button from "../UI/Button/Button";
+
+const Hero = () => {
+  const homeTextRef = useRef(null);
+  const homeImgRef = useRef(null);
+
+  useEffect(() => {
+    gsapFadeIn(homeTextRef, 0.3);
+    gsapFadeIn(homeImgRef, 0.5);
+  }, []);
+
+  return (
+    <section id="home" className="section | u-bg-primary-50">
+      <div className="container | u-margin-top-huge u-mx-auto u-grid u-auto-columns">
+        <div ref={homeImgRef} className="u-place-content-center">
+          <Image
+            src="/img/illustrations/undraw_responsive_6c8s.svg"
+            alt="responsive"
+            width={500}
+            height={350}
+          />
+        </div>
+
+        <div ref={homeTextRef}>
+          <h1 className="primary-heading | u-margin-bottom-small">
+            Get scalable, modern and reliable{" "}
+            <span className="u-text-span">custom software</span>.
+          </h1>
+
+          <p className="paragraph">
+            We develop web, mobile and custom software that&apos;s tailor-made
+            to capture all your unique and essential requirements.
+          </p>
+
+          <Button />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

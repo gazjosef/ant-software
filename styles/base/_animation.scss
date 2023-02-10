@@ -1,22 +1,24 @@
-.hover-underline {
+.hover-underline-animation {
   display: inline-block;
   position: relative;
 }
 
-.hover-underline:after {
+.hover-underline-animation:after {
   content: "";
-  position: absolute;
+  background-color: $clr-primary-400;
   width: 100%;
-  transform: scaleX(0);
   height: 0.35rem;
-  bottom: -2.6rem;
+
+  position: absolute;
+  transform: scaleX(0);
+  bottom: -2rem;
   left: 0;
-  background-color: $color-primary-200;
+
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
-.hover-underline:hover:after {
+.hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

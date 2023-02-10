@@ -34,11 +34,11 @@ const Post = () => {
         <h2 className="post__title-two | u-flex u-justify-center">
           Welcome to my page of blog posts
         </h2>
-        <div>
+        <div className="post__grid">
           <article>
             <Link>
               <span>
-                <img src="" alt="" />
+                <Image src="" alt="" />
                 <span>
                   <h3></h3>
                 </span>

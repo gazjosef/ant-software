@@ -1,0 +1,13 @@
+.header {
+  height: 8rem;
+  padding: 1rem 4rem;
+
+  &__logo {
+    cursor: pointer;
+
+    &:focus,
+    &:visited {
+      color: $color-black;
+    }
+  }
+}

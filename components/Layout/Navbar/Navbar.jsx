@@ -16,7 +16,13 @@ function Navbar() {
     <nav className="navbar | u-bg-white-50">
       <div className="navbar__logo">
         <Link href="#home">
-          <img src="/img/black-logo.png" alt="Logo" className="logo" />
+          <Image
+            src="/img/black-logo.png"
+            alt="Logo"
+            className="logo"
+            width={196.875}
+            height={55.8125}
+          />
         </Link>
       </div>
       <div className="navbar__menu-icon">
