@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react";
 import {
   FaBriefcase,
   FaShoppingCart,
@@ -6,20 +5,15 @@ import {
   FaSearch,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import { gsapFadeIn } from "@/components/Animations";
+import useGsapFadeIn from "hooks/useGsapFadeIn";
 
 const Services = () => {
-  const servicesTitleRef = useRef(null);
-  const servicesGridRef = useRef(null);
-
-  useEffect(() => {
-    gsapFadeIn(servicesGridRef, 0.3);
-  }, []);
+  const [servicesTitleRef, servicesGridRef] = useGsapFadeIn();
 
   return (
     <section id="services" className="section | u-bg-primary-50">
       <div className="container | u-center-text u-mx-auto">
-        <div className="section-services__title" ref={servicesTitleRef}>
+        <div ref={servicesTitleRef}>
           <h2 className="secondary-heading | u-text-color-secondary-300 u-margin-bottom-medium">
             Services
           </h2>
@@ -29,9 +23,7 @@ const Services = () => {
             your business.
           </h1>
         </div>
-      </div>
 
-      <div className="container | u-mx-auto">
         <section className="section-services__grid" ref={servicesGridRef}>
           <div className="feature-box">
             <FaBriefcase size={70} className="u-margin-bottom-medium" />

@@ -1,19 +1,9 @@
 import Image from "next/image";
-import { useRef, useEffect } from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { gsapFadeIn } from "@/components/Animations";
+import useGsapFadeIn from "hooks/useGsapFadeIn";
 
 const Contact = () => {
-  const contactTitleRef = useRef(null);
-  const contactImgRef = useRef(null);
-  const contactDetailsRef = useRef(null);
-  const contactFormRef = useRef(null);
-
-  useEffect(() => {
-    gsapFadeIn(contactImgRef, 0.3);
-    gsapFadeIn(contactDetailsRef, 0.3);
-    gsapFadeIn(contactFormRef, 0.3);
-  }, []);
+  const [contactTitleRef, contactDetailsRef, contactFormRef] = useGsapFadeIn();
 
   return (
     <section id="contact" className="section">

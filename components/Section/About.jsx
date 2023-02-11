@@ -1,21 +1,13 @@
 import Image from "next/image";
-import { useRef, useEffect } from "react";
-import { gsapFadeIn } from "@/components/Animations";
+import useGsapFadeIn from "hooks/useGsapFadeIn";
 
 const About = () => {
-  const aboutTitleRef = useRef(null);
-  const aboutImageRef = useRef(null);
-  const aboutTextRef = useRef(null);
-
-  useEffect(() => {
-    gsapFadeIn(aboutImageRef, 0.3);
-    gsapFadeIn(aboutTextRef, 0.5);
-  }, []);
+  const [aboutTitleRef, aboutImageRef, aboutTextRef] = useGsapFadeIn();
 
   return (
     <section id="about" className="section">
       <div className="container | u-mx-auto u-center-text">
-        <div className="section-about__title" ref={aboutTitleRef}>
+        <div ref={aboutTitleRef}>
           <h2 className="secondary-heading | u-text-color-secondary-300">
             About Us
           </h2>

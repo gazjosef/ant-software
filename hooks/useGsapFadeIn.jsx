@@ -1,12 +1,9 @@
-import React from "react";
 import { useRef, useEffect } from "react";
-// import { gsapFadeIn } from "@/components/Animations";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const useGsapFadeIn = () => {
-  useEffect(() => {
-    gsapFadeIn;
-  }, []);
-
   const gsapFadeIn = (ref, delay) => {
     const el = ref.current;
     gsap.fromTo(
@@ -33,7 +30,15 @@ const useGsapFadeIn = () => {
     );
   };
 
-  return <div>useGsapFadeIn</div>;
+  const homeTextRef = useRef(null);
+  const homeImgRef = useRef(null);
+
+  useEffect(() => {
+    gsapFadeIn(homeTextRef, 0.3);
+    gsapFadeIn(homeImgRef, 0.5);
+  }, []);
+
+  return [homeTextRef, homeImgRef];
 };
 
 export default useGsapFadeIn;

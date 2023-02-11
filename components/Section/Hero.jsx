@@ -1,16 +1,9 @@
 import Image from "next/image";
-import { useRef, useEffect } from "react";
-import { gsapFadeIn } from "@/components/Animations";
 import Button from "../UI/Button/Button";
+import useGsapFadeIn from "hooks/useGsapFadeIn";
 
 const Hero = () => {
-  const homeTextRef = useRef(null);
-  const homeImgRef = useRef(null);
-
-  useEffect(() => {
-    gsapFadeIn(homeTextRef, 0.3);
-    gsapFadeIn(homeImgRef, 0.5);
-  }, []);
+  const [homeTextRef, homeImgRef] = useGsapFadeIn();
 
   return (
     <section id="home" className="section | u-bg-primary-50">
