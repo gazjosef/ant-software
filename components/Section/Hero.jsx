@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="section | u-bg-primary-50">
-      <div className="container | u-margin-top-huge u-mx-auto u-grid u-auto-columns">
+      <div className="container | u-margin-top-huge u-mx-auto u-grid u-even-columns">
         <div ref={homeImgRef} className="u-place-content-center">
           <Image
             src="/img/illustrations/undraw_responsive_6c8s.svg"

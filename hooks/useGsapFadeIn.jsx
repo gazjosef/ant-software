@@ -30,15 +30,15 @@ const useGsapFadeIn = () => {
     );
   };
 
-  const homeTextRef = useRef(null);
-  const homeImgRef = useRef(null);
+  const textRef = useRef(null);
+  const imgRef = useRef(null);
 
   useEffect(() => {
-    gsapFadeIn(homeTextRef, 0.3);
-    gsapFadeIn(homeImgRef, 0.5);
+    gsapFadeIn(textRef, 0.3);
+    gsapFadeIn(imgRef, 0.5);
   }, []);
 
-  return [homeTextRef, homeImgRef];
+  return [textRef, imgRef];
 };
 
 export default useGsapFadeIn;
