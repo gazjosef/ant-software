@@ -25,28 +25,28 @@
     color: $color-black-800;
   }
 
-  &__logo {
-    justify-self: start;
+  // &__logo {
+  //   justify-self: start;
 
-    .logo {
-      max-height: 5rem;
-      display: grid;
-      place-content: center;
-    }
+  //   .logo {
+  //     max-height: 5rem;
+  //     display: grid;
+  //     place-content: center;
+  //   }
 
-    @include respond(tab-port) {
-      position: absolute;
-      top: 0;
-      left: 0;
+  //   @include respond(tab-port) {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
 
-      transform: translate(25%, 25%);
-    }
+  //     transform: translate(25%, 25%);
+  //   }
 
-    &:focus,
-    &:visited {
-      color: $color-black;
-    }
-  }
+  //   &:focus,
+  //   &:visited {
+  //     color: $color-black;
+  //   }
+  // }
 
   &__menu {
     width: 70vw;

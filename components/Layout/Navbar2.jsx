@@ -12,28 +12,28 @@ const Navbar2 = () => {
     {
       title: "Home",
       url: "#home",
-      cName: "navbar2__links | u-text-black",
+      cName: "u-text-black",
     },
     {
       title: "About",
       url: "#about",
-      cName: "navbar2__links | u-text-black",
+      cName: "u-text-black",
     },
     {
       title: "Services",
       url: "#services",
-      cName: "navbar2__links | u-text-black",
+      cName: "u-text-black",
     },
     {
       title: "Contact",
       url: "#contact",
-      cName: "navbar2__links | u-text-black",
+      cName: "u-text-black",
     },
   ];
 
   return (
-    <nav className="navbar2 | u-flex u-items-center u-md-invisible  | u-fs-nav">
-      <div className="navbar2__menu-icon | u-hidden">
+    <nav className="u-flex u-items-center   | u-fs-nav">
+      <div className="u-hidden">
         <IconContext.Provider value={{ className: "fa-react" }}>
           {toggle ? (
             <FaTimes onClick={handleClick} />
@@ -46,8 +46,8 @@ const Navbar2 = () => {
         role="list"
         className={
           toggle
-            ? "navbar2__menu active | u-flex u-items-center"
-            : "navbar2__menu  | u-flex u-items-center"
+            ? "active | u-md-invisible u-flex u-items-center"
+            : "u-md-invisible u-flex u-items-center"
         }
       >
         {MenuItems.map((item, index) => {

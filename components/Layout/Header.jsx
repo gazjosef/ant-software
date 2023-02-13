@@ -19,7 +19,9 @@ const Header = () => {
           </Link>
         </div>
         <Navbar2 />
-        <Button className="u-md-invisible" />
+        <div className="u-md-invisible">
+          <Button />
+        </div>
       </div>
     </header>
   );
