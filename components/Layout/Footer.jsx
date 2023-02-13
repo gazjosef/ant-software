@@ -14,23 +14,23 @@ export const Footer = () => {
             className="u-margin-bottom-small"
           />
 
-          <div className="footer__social">
-            <a href="www.facebook.com" className="u-text-white">
+          <div className="u-flex u-mx-auto">
+            <a href="www.facebook.com" className="u-mx-05 u-text-white">
               <FaFacebook />
             </a>
-            <a href="www.instagram.com" className="u-text-white">
+            <a href="www.instagram.com" className="u-mx-05 u-text-white">
               <FaInstagram />
             </a>
-            <a href="www.linkedin.com" className="u-text-white">
+            <a href="www.linkedin.com" className="u-mx-05 u-text-white">
               <FaLinkedin />
             </a>
-            <a href="www.twitter.com" className="u-text-white">
+            <a href="www.twitter.com" className="u-mx-05 u-text-white">
               <FaTwitter />
             </a>
           </div>
         </section>
 
-        <section className="footer__nav-links | u-grid u-even-columns">
+        <section className="u-grid u-even-columns u-gap-3">
           <section>
             <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
               Nav Links
@@ -72,11 +72,12 @@ export const Footer = () => {
         </section>
       </div>
 
-      <div className="container | u-mx-auto u-grid">
-        <section className="footer__copyright u-center-text">
-          Copyright <span className="u-text-color-secondary-300">&copy;</span>{" "}
+      <div className="container | u-mx-auto">
+        <div>
+          Copyright{" "}
+          <span className="u-mx-auto u-text-color-secondary-300">&copy;</span>{" "}
           Ant Software 2022
-        </section>
+        </div>
       </div>
     </footer>
   );

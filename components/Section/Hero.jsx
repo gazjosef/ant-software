@@ -3,7 +3,7 @@ import Button from "../UI/Button/Button";
 import useGsapFadeIn from "hooks/useGsapFadeIn";
 
 const Hero = () => {
-  const [homeTextRef, homeImgRef] = useGsapFadeIn();
+  const [homeTitleRef, homeTextRef, homeImgRef] = useGsapFadeIn();
 
   return (
     <section id="home" className="section | u-bg-primary-50">
