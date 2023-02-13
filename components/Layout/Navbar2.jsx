@@ -32,7 +32,7 @@ const Navbar2 = () => {
   ];
 
   return (
-    <nav className="navbar2 | u-flex u-items-center | u-fs-nav">
+    <nav className="navbar2 | u-flex u-items-center u-md-invisible  | u-fs-nav">
       <div className="navbar2__menu-icon | u-hidden">
         <IconContext.Provider value={{ className: "fa-react" }}>
           {toggle ? (
