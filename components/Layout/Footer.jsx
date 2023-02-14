@@ -41,8 +41,11 @@ export const Footer = () => {
           </div>
         </section>
 
-        <section ref={footerTextRef} className="u-grid u-even-columns">
-          <div className="u-place-content-start">
+        <section
+          ref={footerTextRef}
+          className="u-mx-auto | u-grid u-even-columns  | u-md-center-text  "
+        >
+          <div className="u-margin-bottom-medium u-place-content-start-center">
             <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
               Nav Links
             </h2>
@@ -76,7 +79,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="u-place-content-start">
+          <div className="u-margin-bottom-medium u-place-content-start-center |  u-md-center-text">
             <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
               Contact
             </h2>

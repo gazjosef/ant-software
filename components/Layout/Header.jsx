@@ -6,7 +6,7 @@ import Navbar2 from "./Navbar2";
 const Header = () => {
   return (
     <header className="header">
-      <div className="container | u-mx-auto u-flex u-justify-between">
+      <div className="container | u-mx-auto u-flex u-items-center u-justify-between">
         <div className="header__logo">
           <Link href="#home">
             <Image

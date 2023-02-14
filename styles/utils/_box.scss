@@ -1,5 +1,9 @@
 // HEIGHT
 
+.u-h-16 {
+  height: 16rem;
+}
+
 .u-h-200 {
   height: 20rem;
 }
@@ -10,4 +14,14 @@
 
 .u-h-min {
   height: min-content;
+}
+
+// BORDER RADIUS
+.u-rounded {
+  border-radius: 0.4rem;
+}
+
+// BOX SHADOW
+.u-shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }

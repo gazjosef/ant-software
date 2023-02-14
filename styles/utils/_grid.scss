@@ -104,6 +104,18 @@
 
 // GRID GAP
 
+.u-gap {
+  margin-right: $grid-gap; // Set the margin between elements
+  margin-bottom: $grid-gap; // Set the margin between rows
+
+  @supports (gap: $grid-gap) {
+    // Check if the 'gap' property is supported
+    margin-right: 0;
+    margin-bottom: 0;
+    gap: $grid-gap; // Set the gap value if supported
+  }
+}
+
 .u-gap-1 {
   gap: 1rem;
 }

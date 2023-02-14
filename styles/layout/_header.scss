@@ -1,8 +1,9 @@
 .header {
-  padding: 1rem 4rem;
+  // padding: 1rem 4rem;
 
   &__logo {
     cursor: pointer;
+    margin: 2rem;
 
     &:focus,
     &:visited {

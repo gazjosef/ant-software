@@ -32,7 +32,7 @@ const Navbar2 = () => {
   ];
 
   return (
-    <nav className="u-flex u-items-center   | u-fs-nav">
+    <nav className="navbar2 | u-flex u-items-center   | u-fs-nav">
       <div className="u-hidden">
         <IconContext.Provider value={{ className: "fa-react" }}>
           {toggle ? (
@@ -46,8 +46,8 @@ const Navbar2 = () => {
         role="list"
         className={
           toggle
-            ? "active | u-md-invisible u-flex u-items-center"
-            : "u-md-invisible u-flex u-items-center"
+            ? "navbar2__list active | u-md-invisible u-flex u-items-center"
+            : "navbar2__list | u-md-invisible u-flex u-items-center"
         }
       >
         {MenuItems.map((item, index) => {

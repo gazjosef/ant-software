@@ -13,7 +13,7 @@ const Contact = () => {
         </h2>
       </div>
 
-      <div className="container | u-mx-auto | u-grid u-even-columns u-gap-2">
+      <div className="container | u-mx-auto | u-grid u-even-columns u-gap">
         <section
           className="u-flex u-flex-col u-justify-between"
           ref={contactDetailsRef}
