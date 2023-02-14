@@ -17,7 +17,7 @@ const About = () => {
           </h1>
         </div>
 
-        <div className="container | u-mx-auto u-grid u-even-columns">
+        <div className="container | u-mx-auto u-grid u-even-columns u-gap-2">
           <div className="section-about__image" ref={aboutImageRef}>
             <Image
               src="/img/illustrations/undraw_developer_activity_bv83.svg"
