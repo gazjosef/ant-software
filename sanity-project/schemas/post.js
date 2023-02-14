@@ -1,12 +1,11 @@
-// schemas/pet.js
 export default {
   name: 'post',
   title: 'Post',
   type: 'document',
   fields: [
     {
-      name: 'name',
-      title: 'Name',
+      name: 'title',
+      title: 'Title',
       type: 'string',
     },
     {
@@ -26,29 +25,16 @@ export default {
     // },
     {
       name: 'mainImage',
-      title: 'Main Image',
+      title: 'Main image',
       type: 'image',
       options: {
         hotspot: true,
       },
     },
-    // {
-    //   name: 'categories',
-    //   title: 'Categories',
-    //   type: 'array',
-    //   of: [
-    //     {
-    //       type: 'reference',
-    //       to: {
-    //         type: 'category',
-    //       },
-    //     },
-    //   ],
-    // },
     {
       name: 'publishedAt',
-      title: 'Published At',
-      type: 'string',
+      title: 'Published at',
+      type: 'datetime',
     },
     // {
     //   name: 'body',
@@ -56,4 +42,18 @@ export default {
     //   type: 'blockContent',
     // },
   ],
+
+  preview: {
+    select: {
+      title: 'title',
+      author: 'author.name',
+      media: 'mainImage',
+    },
+    prepare(selection) {
+      const {author} = selection
+      return Object.assign({}, selection, {
+        subtitle: author && `by ${author}`,
+      })
+    },
+  },
 }
