@@ -1,6 +1,14 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 import Image from "next/image";
 import useGsapFadeIn from "hooks/useGsapFadeIn";
+import { IconContext } from "react-icons";
 
 export const Footer = () => {
   const [footerTitleRef, footerTextRef, footerImgRef] = useGsapFadeIn();
@@ -74,8 +82,18 @@ export const Footer = () => {
             </h2>
 
             <ul role="list" className="nav">
-              <li className="nav__item">0434 420 506</li>
-              <li className="nav__item">ant@antsoftware.dev</li>
+              <li className="nav__item | u-flex u-items-center">
+                <IconContext.Provider value={{ className: "u-mr-05 u-fs-2" }}>
+                  <FaPhone />
+                </IconContext.Provider>
+                : 0434 420 506
+              </li>
+              <li className="nav__item | u-flex u-items-center">
+                <IconContext.Provider value={{ className: "u-mr-05 u-fs-2" }}>
+                  <FaEnvelope />
+                </IconContext.Provider>
+                : ant@antsoftware.dev
+              </li>
             </ul>
           </div>
         </section>
