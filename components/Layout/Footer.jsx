@@ -25,7 +25,7 @@ export const Footer = () => {
             className="u-margin-bottom-small"
           />
 
-          <div className="u-flex u-mx-auto">
+          <div className="u-margin-bottom-medium u-mx-auto | u-flex">
             <a href="www.facebook.com" className="u-mx-05 u-text-white">
               <FaFacebook />
             </a>
@@ -43,7 +43,7 @@ export const Footer = () => {
 
         <section
           ref={footerTextRef}
-          className="u-mx-auto | u-grid u-even-columns  | u-md-center-text  "
+          className="u-mx-auto | u-grid u-even-columns  | u-md-center-text"
         >
           <div className="u-margin-bottom-medium u-place-content-start-center">
             <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
@@ -84,15 +84,17 @@ export const Footer = () => {
               Contact
             </h2>
 
-            <ul role="list" className="nav">
-              <li className="nav__item | u-flex u-items-center">
-                <IconContext.Provider value={{ className: "u-mr-05 u-fs-2" }}>
+            <ul role="list" className="nav ">
+              <li className="nav__item |  u-flex u-items-center | u-center-text">
+                <IconContext.Provider
+                  value={{ className: "u-mr-05 | u-fs-2 u-text-center" }}
+                >
                   <FaPhone />
                 </IconContext.Provider>
                 : 0434 420 506
               </li>
               <li className="nav__item | u-flex u-items-center">
-                <IconContext.Provider value={{ className: "u-mr-05 u-fs-2" }}>
+                <IconContext.Provider value={{ className: "u-mr-05 | u-fs-2" }}>
                   <FaEnvelope />
                 </IconContext.Provider>
                 : ant@antsoftware.dev

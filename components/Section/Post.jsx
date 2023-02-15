@@ -35,7 +35,7 @@ const Post = () => {
           Welcome to my page of blog posts
         </h2>
         <div className="post__grid | u-auto-columns u-gap-2">
-          {postData &&
+          {/* {postData &&
             postData.map((post, index) => {
               <article>
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
@@ -54,7 +54,7 @@ const Post = () => {
                   </span>
                 </Link>
               </article>;
-            })}
+            })} */}
         </div>
       </section>
     </main>

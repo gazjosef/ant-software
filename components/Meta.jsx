@@ -15,7 +15,8 @@ export const Meta = ({ title, keywords, description }) => {
 
 Meta.defaultProps = {
   title: "Ant Software Dev | Embiggened Innovation",
-  keywords: "web design, web development",
+  keywords:
+    "software development, web development, custom software, mobile app development, IT services, software consulting, web design, e-commerce development, cloud computing, agile development, front-end development, back-end development, full-stack development, responsive design, SEO services",
   description:
     "Get scalable, modern and reliable custom software and let your business grow.",
 };

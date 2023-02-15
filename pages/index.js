@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="main">
       <Hero />
-      <Post />
+      {/* <Post /> */}
       <About />
       <Services />
       <Contact />

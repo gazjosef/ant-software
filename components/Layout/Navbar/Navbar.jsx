@@ -15,15 +15,13 @@ function Navbar() {
   return (
     <nav className="navbar | u-bg-white-50">
       <div className="navbar__logo">
-        <Link href="#home">
-          <Image
-            src="/img/black-logo.png"
-            alt="Logo"
-            className="logo"
-            width={196.875}
-            height={55.8125}
-          />
-        </Link>
+        <Image
+          src="/img/black-logo.png"
+          alt="Logo"
+          className="logo"
+          width={196.875}
+          height={55.8125}
+        />
       </div>
       <div className="navbar__menu-icon">
         <IconContext.Provider value={{ className: "fa-react" }}>
