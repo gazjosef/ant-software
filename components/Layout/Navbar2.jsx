@@ -33,7 +33,7 @@ const Navbar2 = () => {
 
   return (
     <nav className="navbar2 | u-flex u-items-center   | u-fs-nav">
-      <div className="u-hidden">
+      <div className="navbar2__mobile-nav-toggle sr-only">
         <IconContext.Provider value={{ className: "fa-react" }}>
           {toggle ? (
             <FaTimes onClick={handleClick} />
@@ -46,8 +46,8 @@ const Navbar2 = () => {
         role="list"
         className={
           toggle
-            ? "navbar2__list active | u-md-invisible u-flex u-items-center"
-            : "navbar2__list | u-md-invisible u-flex u-items-center"
+            ? "navbar2__list active | u-flex u-items-center"
+            : "navbar2__list | u-flex u-items-center"
         }
       >
         {MenuItems.map((item, index) => {

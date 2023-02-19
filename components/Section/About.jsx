@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <section id="about" className="section">
-      <div className="container | u-mx-auto u-center-text">
+      <div className="container |  u-center-text">
         <div ref={aboutTitleRef}>
           <h2 className="secondary-heading | u-text-color-secondary-300">
             About Us
@@ -17,7 +17,7 @@ const About = () => {
           </h1>
         </div>
 
-        <div className="container | u-mx-auto u-grid u-even-columns u-gap">
+        <div className="container | u-grid u-even-columns u-gap">
           <div className="section-about__image" ref={aboutImageRef}>
             <Image
               src="/img/illustrations/undraw_developer_activity_bv83.svg"

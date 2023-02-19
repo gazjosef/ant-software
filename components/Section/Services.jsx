@@ -12,7 +12,7 @@ const Services = () => {
 
   return (
     <section id="services" className="section | u-bg-primary-50">
-      <div className="container | u-center-text u-mx-auto">
+      <div className="container | u-center-text">
         <div ref={servicesTitleRef}>
           <h2 className="secondary-heading | u-text-color-secondary-300 u-margin-bottom-medium">
             Services

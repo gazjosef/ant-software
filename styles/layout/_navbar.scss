@@ -131,13 +131,29 @@
 }
 
 .navbar2 {
+  position: relative;
+
+  &__mobile-nav-toggle {
+    background: red;
+    aspect-ratio: 1;
+    width: 1rem;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
   &__list {
     @include respond(phone) {
-      position: fixed;
-      inset: 0 0 0 20%;
-
-      flex-direction: column;
       background-color: steelblue;
+      padding: min(20vh, 10rem) 2rem;
+
+      position: fixed;
+      inset: 0 0 0 0;
+      flex-direction: column;
+      z-index: 1000;
+
+      color: $color-white;
     }
   }
 }

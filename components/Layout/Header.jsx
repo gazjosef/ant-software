@@ -6,8 +6,11 @@ import Navbar2 from "./Navbar2";
 const Header = () => {
   return (
     <header className="header">
-      <div className="container | u-mx-auto u-flex u-items-center u-justify-between">
-        <div className="header__logo">
+      <div className="container | u-flex u-items-center u-justify-between">
+        <div
+          className="header__logo |"
+          // style={{ width: 196.875, height: 55.8125 }}
+        >
           <Link href="#home">
             <Image
               src="/img/black-logo.png"
@@ -15,12 +18,17 @@ const Header = () => {
               className="logo"
               width={196.875}
               height={55.8125}
+              // layout="fill"
             />
           </Link>
         </div>
         <Navbar2 />
-        <div className="u-md-invisible">
-          <Button />
+        <div className="">
+          <Button
+            className="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          />
         </div>
       </div>
     </header>

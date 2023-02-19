@@ -1,9 +1,14 @@
 .header {
-  // padding: 1rem 4rem;
+  min-height: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__logo {
     cursor: pointer;
     margin: 2rem;
+    min-height: 5.5rem;
 
     &:focus,
     &:visited {

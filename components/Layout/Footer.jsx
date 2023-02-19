@@ -15,7 +15,7 @@ export const Footer = () => {
 
   return (
     <footer className="footer | u-bg-primary-300 u-text-color-white-200">
-      <div className="container | u-margin-top-medium u-mx-auto u-grid u-even-columns">
+      <div className="container | u-margin-top-medium | u-grid u-even-columns">
         <section ref={footerImgRef}>
           <Image
             src="/img/white-logo.png"
@@ -43,7 +43,7 @@ export const Footer = () => {
 
         <section
           ref={footerTextRef}
-          className="u-mx-auto | u-grid u-even-columns  | u-md-center-text"
+          className="u-mx-auto | u-grid u-even-columns | u-md-center-text"
         >
           <div className="u-margin-bottom-medium u-place-content-start-center">
             <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
