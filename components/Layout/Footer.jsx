@@ -13,6 +13,8 @@ import { IconContext } from "react-icons";
 export const Footer = () => {
   const [footerTitleRef, footerTextRef, footerImgRef] = useGsapFadeIn();
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer | u-bg-primary-300 u-text-color-white-200">
       <div className="container | u-margin-top-medium | u-grid u-even-columns">
@@ -85,10 +87,8 @@ export const Footer = () => {
             </h2>
 
             <ul role="list" className="nav ">
-              <li className="nav__item |  u-flex u-items-center | u-center-text">
-                <IconContext.Provider
-                  value={{ className: "u-mr-05 | u-fs-2 u-text-center" }}
-                >
+              <li className="nav__item |  u-flex u-items-center">
+                <IconContext.Provider value={{ className: "u-mr-05 | u-fs-2" }}>
                   <FaPhone />
                 </IconContext.Provider>
                 : 0434 420 506
@@ -107,7 +107,7 @@ export const Footer = () => {
       <section className="container | u-margin-top-medium u-mx-auto">
         <p className="u-center-text">
           Copyright <span className="u-text-color-secondary-300">&copy;</span>{" "}
-          Ant Software 2022
+          Ant Software {currentYear}
         </p>
       </section>
     </footer>
