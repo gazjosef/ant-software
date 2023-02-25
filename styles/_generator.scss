@@ -1,7 +1,9 @@
 @use "abstract/colors" as *;
 @use "abstract/sizes" as *;
 
+// * ///////////////////////////////////////////////////////////////////////
 // * COLOR
+// * ///////////////////////////////////////////////////////////////////////
 
 :root {
   @each $color, $shades in $colors {
@@ -27,11 +29,13 @@
   }
 }
 
+// * ///////////////////////////////////////////////////////////////////////
 // * FONTS
+// * ///////////////////////////////////////////////////////////////////////
 
 :root {
   @each $size, $value in $font-size {
-    --fs-#{$size}: #{$value};
+    --fs-#{$size}: #{$value}rem;
   }
 
   @each $weight, $value in $font-weights {
@@ -50,8 +54,95 @@
     font-weight: #{$value};
   }
 }
+// * ///////////////////////////////////////////////////////////////////////
+// * GRID
+// * ///////////////////////////////////////////////////////////////////////
 
+// * -- GRID TEMPLATE COLUMNS
+@each $size, $value in $grid-templates {
+  .u-grid-cols-#{$size} {
+    @if not(type-of($value) == "number") {
+      grid-template-columns: #{$value};
+    } @else {
+      grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
+    }
+  }
+}
+
+// * -- GRID COLUMN SPAN
+@each $size, $value in $grid-columns {
+  .u-col-span-#{$size} {
+    @if not(type-of($value) == "number") {
+      grid-column: #{$value};
+    } @else {
+      grid-column: span #{$value} / span #{$value};
+    }
+  }
+}
+
+// * -- GRID COLUMN START
+@each $size, $value in $grid-columns {
+  .u-col-start-#{$size} {
+    grid-column-start: #{$value};
+  }
+}
+
+// * -- GRID COLUMN END
+@each $size, $value in $grid-columns {
+  .u-col-end-#{$size} {
+    grid-column-end: #{$value};
+  }
+}
+
+// * -- GRID ROW SPAN
+@each $size, $value in $grid-rows {
+  .u-row-span-#{$size} {
+    @if not(type-of($value) == "number") {
+      grid-row: #{$value};
+    } @else {
+      grid-row: span #{$value} / span #{$value};
+    }
+  }
+}
+
+// * -- GRID ROW START
+@each $size, $value in $grid-rows {
+  .u-row-start-#{$size} {
+    grid-row-start: #{$value};
+  }
+}
+
+// * -- GRID ROW END
+@each $size, $value in $grid-rows {
+  .u-row-end-#{$size} {
+    grid-row-end: #{$value};
+  }
+}
+
+// * -- GRID GAP
+@each $size, $value in $grid-gaps {
+  .u-gap-#{$size} {
+    gap: #{$value}rem;
+  }
+}
+
+// * -- GRID COLUMN GAP
+@each $size, $value in $grid-gaps {
+  .u-gap-x-#{$size} {
+    column-gap: #{$value}rem;
+  }
+}
+
+// * -- GRID ROW GAP
+@each $size, $value in $grid-gaps {
+  .u-gap-y-#{$size} {
+    row-gap: #{$value}rem;
+  }
+}
+
+// * ///////////////////////////////////////////////////////////////////////
 // * MARGIN
+// * ///////////////////////////////////////////////////////////////////////
 
 @each $size, $value in $box-sizes {
   .u-mt-#{$size} {
@@ -117,7 +208,9 @@
   }
 }
 
+// * ///////////////////////////////////////////////////////////////////////
 // * PADDING
+// * ///////////////////////////////////////////////////////////////////////
 
 @each $size, $value in $box-sizes {
   .u-pt-#{$size} {

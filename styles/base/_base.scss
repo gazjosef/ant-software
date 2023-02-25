@@ -18,7 +18,7 @@ html {
 
 /* Set box-sizing & background color */
 body {
-  background-color: $color-white-50;
+  background-color: var(--clr-white-100);
   box-sizing: border-box;
 }
 

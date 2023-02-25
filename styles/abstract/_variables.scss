@@ -46,26 +46,12 @@ $ff-body: $ff-primary;
 $ff-heading: $ff-primary;
 
 //* --- Font Size
-$fs-300: 1.3rem;
-$fs-400: 1.4rem;
-$fs-500: 1.5rem;
-$fs-600: 1.6rem;
-$fs-700: 2rem;
-$fs-750: 2.5rem;
-$fs-800: 3rem;
-$fs-850: 3.5rem;
-$fs-900: 4rem;
 
-$fs-body: $fs-400;
-$fs-primary-heading: $fs-800;
-$fs-secondary-heading: $fs-700;
-$fs-nav: $fs-700;
-$fs-button: $fs-300;
-
-//* --- Font Weight
-$fw-regular: 400;
-$fw-semi-bold: 500;
-$fw-bold: 700;
+$fs-body: var(--fs-500);
+$fs-primary-heading: var(--fs-800);
+$fs-secondary-heading: var(--fs-700);
+$fs-nav: var(--fs-700);
+$fs-button: var(--fs-300);
 
 // * --- Fluid Type
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,28,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */

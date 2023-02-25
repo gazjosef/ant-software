@@ -19,7 +19,7 @@
 
   input[type="submit"] {
     background-color: $color-primary-200;
-    color: $color-white;
+    color: var(--clr-white-0);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;

@@ -14,6 +14,7 @@
 @import "components/form";
 @import "components/post";
 
+@import "layout/elements";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navbar";
@@ -21,13 +22,8 @@
 @import "pages/all";
 
 @import "utils/box";
-@import "utils/color";
-@import "utils/display";
-@import "utils/elements";
 @import "utils/flex";
-@import "utils/font";
 @import "utils/grid";
+@import "utils/layouts";
 @import "utils/margin";
-@import "utils/padding";
-@import "utils/position";
 @import "utils/typography";

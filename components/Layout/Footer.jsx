@@ -28,16 +28,16 @@ export const Footer = () => {
           />
 
           <div className="u-margin-bottom-medium u-mx-auto | u-flex">
-            <a href="www.facebook.com" className="u-mx-05 u-text-white">
+            <a href="www.facebook.com" className="u-mx-1 u-text-white">
               <FaFacebook />
             </a>
-            <a href="www.instagram.com" className="u-mx-05 u-text-white">
+            <a href="www.instagram.com" className="u-mx-1 u-text-white">
               <FaInstagram />
             </a>
-            <a href="www.linkedin.com" className="u-mx-05 u-text-white">
+            <a href="www.linkedin.com" className="u-mx-1 u-text-white">
               <FaLinkedin />
             </a>
-            <a href="www.twitter.com" className="u-mx-05 u-text-white">
+            <a href="www.twitter.com" className="u-mx-1 u-text-white">
               <FaTwitter />
             </a>
           </div>

@@ -14,6 +14,7 @@ export const Layout = ({ children }) => {
       </header>
 
       {/* <Navbar /> */}
+
       <Header />
 
       {router.pathname === "/"}

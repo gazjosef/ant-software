@@ -7,34 +7,42 @@ const Navbar2 = () => {
 
   const handleClick = () => {
     setToggle((t) => !t);
+    // const invisibility = primary - nav.getAttribute("data-visible");
+
+    // console.log(invisibility);
   };
   const MenuItems = [
     {
       title: "Home",
       url: "#home",
-      cName: "u-text-black",
+      cName: "u-ff-nav u-fw-bold u-text-black",
     },
     {
       title: "About",
       url: "#about",
-      cName: "u-text-black",
+      cName: "u-ff-nav u-fw-bold u-text-black",
     },
     {
       title: "Services",
       url: "#services",
-      cName: "u-text-black",
+      cName: "u-ff-nav u-fw-bold u-text-black",
     },
     {
       title: "Contact",
       url: "#contact",
-      cName: "u-text-black",
+      cName: "u-ff-nav u-fw-bold u-text-black",
     },
   ];
 
   return (
-    <nav className="navbar2 | u-flex u-items-center   | u-fs-nav">
-      <div className="navbar2__mobile-nav-toggle sr-only">
-        <IconContext.Provider value={{ className: "fa-react" }}>
+    <nav className="navbar2 | u-flex u-items-center | u-fs-nav">
+      {/* TOGGLE BUTTON */}
+      <div
+        className="navbar2__mobile-nav-toggle sr-only"
+        aria-label="Toggle navigation"
+        aria-expanded={toggle}
+      >
+        <IconContext.Provider value={{ className: "u-fs-900" }}>
           {toggle ? (
             <FaTimes onClick={handleClick} />
           ) : (
@@ -42,13 +50,15 @@ const Navbar2 = () => {
           )}
         </IconContext.Provider>
       </div>
+
+      {/* UNORDERED LIST */}
       <ul
+        id="primary-navigation"
+        data-visible="false"
         role="list"
-        className={
-          toggle
-            ? "navbar2__list active | u-flex u-items-center"
-            : "navbar2__list | u-flex u-items-center"
-        }
+        className={`navbar2__list | u-flex u-items-center
+          ${toggle ? "active" : ""}
+            `}
       >
         {MenuItems.map((item, index) => {
           return (

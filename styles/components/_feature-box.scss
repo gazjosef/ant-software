@@ -28,7 +28,7 @@
 
   p {
     text-align: justify;
-    color: $color-black;
+    color: var(--clr-black-1000);
     font-size: 1.5rem;
   }
 
@@ -38,12 +38,12 @@
 
   &:hover {
     background-color: $color-primary-250;
-    color: $color-white;
+    color: var(--clr-white-0);
     transform: translateY(-1.5rem) scale(1.03);
 
     p,
     h2 {
-      color: $color-white;
+      color: var(--clr-white-0);
     }
   }
 }
