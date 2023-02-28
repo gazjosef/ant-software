@@ -15,22 +15,18 @@ const Navbar2 = () => {
     {
       title: "Home",
       url: "#home",
-      cName: "u-ff-nav u-fw-bold u-text-black",
     },
     {
       title: "About",
       url: "#about",
-      cName: "u-ff-nav u-fw-bold u-text-black",
     },
     {
       title: "Services",
       url: "#services",
-      cName: "u-ff-nav u-fw-bold u-text-black",
     },
     {
       title: "Contact",
       url: "#contact",
-      cName: "u-ff-nav u-fw-bold u-text-black",
     },
   ];
 
@@ -63,7 +59,10 @@ const Navbar2 = () => {
         {MenuItems.map((item, index) => {
           return (
             <li key={index} className="hover-underline-animation | u-mx-1">
-              <a className={item.cName} href={item.url}>
+              <a
+                className="u-ff-nav u-fw-bold u-clr-black-1000"
+                href={item.url}
+              >
                 {item.title}
               </a>
             </li>

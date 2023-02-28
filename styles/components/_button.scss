@@ -44,11 +44,11 @@
 }
 
 .scrollButton {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   height: 6rem;
   width: 6rem;
-  cursor: pointer;
 
   position: fixed;
   right: 4rem;

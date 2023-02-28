@@ -1,14 +1,15 @@
 :root {
-  --clr-primary-100: hsl(14deg, 100%, 80%);
-  --clr-primary-200: hsl(14deg, 100%, 70%);
-  --clr-primary-300: hsl(14deg, 100%, 60%);
-  --clr-primary-400: hsl(14deg, 100%, 43%);
-  --clr-primary-500: hsl(14deg, 100%, 20%);
-  --clr-secondary-100: hsl(219deg, 89%, 80%);
-  --clr-secondary-200: hsl(219deg, 89%, 70%);
-  --clr-secondary-300: hsl(219deg, 89%, 60%);
-  --clr-secondary-400: hsl(219deg, 61%, 37%);
-  --clr-secondary-500: hsl(219deg, 89%, 20%);
+  --clr-primary-50: hsl(213deg, 100%, 98%);
+  --clr-primary-100: hsl(223deg, 48%, 69%);
+  --clr-primary-200: hsl(219deg, 89%, 70%);
+  --clr-primary-300: hsl(219deg, 89%, 60%);
+  --clr-primary-400: hsl(223deg, 100%, 33%);
+  --clr-primary-500: hsl(223deg, 100%, 13%);
+  --clr-secondary-100: hsl(14deg, 100%, 80%);
+  --clr-secondary-200: hsl(14deg, 100%, 70%);
+  --clr-secondary-300: hsl(14deg, 100%, 60%);
+  --clr-secondary-400: hsl(14deg, 100%, 43%);
+  --clr-secondary-500: hsl(14deg, 100%, 20%);
   --clr-white-0: hsl(0deg, 0%, 100%);
   --clr-white-100: hsl(0deg, 0%, 95%);
   --clr-white-200: hsl(0deg, 0%, 87%);
@@ -22,128 +23,48 @@
   --clr-black-1000: hsl(0deg, 0%, 0%);
 }
 
-.u-clr-primary-100 {
-  color: hsl(14deg, 100%, 80%);
-}
-
-.u-clr-primary-200 {
-  color: hsl(14deg, 100%, 70%);
-}
-
-.u-clr-primary-300 {
-  color: hsl(14deg, 100%, 60%);
-}
-
-.u-clr-primary-400 {
-  color: hsl(14deg, 100%, 43%);
-}
-
-.u-clr-primary-500 {
-  color: hsl(14deg, 100%, 20%);
-}
-
-.u-clr-secondary-100 {
-  color: hsl(219deg, 89%, 80%);
-}
-
-.u-clr-secondary-200 {
-  color: hsl(219deg, 89%, 70%);
-}
-
-.u-clr-secondary-300 {
-  color: hsl(219deg, 89%, 60%);
-}
-
-.u-clr-secondary-400 {
-  color: hsl(219deg, 61%, 37%);
-}
-
-.u-clr-secondary-500 {
-  color: hsl(219deg, 89%, 20%);
-}
-
-.u-clr-white-0 {
-  color: hsl(0deg, 0%, 100%);
-}
-
-.u-clr-white-100 {
-  color: hsl(0deg, 0%, 95%);
-}
-
-.u-clr-white-200 {
-  color: hsl(0deg, 0%, 87%);
-}
-
-.u-clr-white-300 {
-  color: hsl(0deg, 0%, 80%);
-}
-
-.u-clr-neutral-400 {
-  color: hsl(0deg, 0%, 60%);
-}
-
-.u-clr-neutral-500 {
-  color: hsl(0deg, 0%, 50%);
-}
-
-.u-clr-neutral-600 {
-  color: hsl(0deg, 0%, 40%);
-}
-
-.u-clr-neutral-700 {
-  color: hsl(0deg, 0%, 30%);
-}
-
-.u-clr-black-800 {
-  color: hsl(0deg, 0%, 20%);
-}
-
-.u-clr-black-900 {
-  color: hsl(0deg, 0%, 10%);
-}
-
-.u-clr-black-1000 {
-  color: hsl(0deg, 0%, 0%);
+.u-bg-primary-50 {
+  background-color: hsl(213deg, 100%, 98%);
 }
 
 .u-bg-primary-100 {
-  background-color: hsl(14deg, 100%, 80%);
+  background-color: hsl(223deg, 48%, 69%);
 }
 
 .u-bg-primary-200 {
-  background-color: hsl(14deg, 100%, 70%);
-}
-
-.u-bg-primary-300 {
-  background-color: hsl(14deg, 100%, 60%);
-}
-
-.u-bg-primary-400 {
-  background-color: hsl(14deg, 100%, 43%);
-}
-
-.u-bg-primary-500 {
-  background-color: hsl(14deg, 100%, 20%);
-}
-
-.u-bg-secondary-100 {
-  background-color: hsl(219deg, 89%, 80%);
-}
-
-.u-bg-secondary-200 {
   background-color: hsl(219deg, 89%, 70%);
 }
 
-.u-bg-secondary-300 {
+.u-bg-primary-300 {
   background-color: hsl(219deg, 89%, 60%);
 }
 
+.u-bg-primary-400 {
+  background-color: hsl(223deg, 100%, 33%);
+}
+
+.u-bg-primary-500 {
+  background-color: hsl(223deg, 100%, 13%);
+}
+
+.u-bg-secondary-100 {
+  background-color: hsl(14deg, 100%, 80%);
+}
+
+.u-bg-secondary-200 {
+  background-color: hsl(14deg, 100%, 70%);
+}
+
+.u-bg-secondary-300 {
+  background-color: hsl(14deg, 100%, 60%);
+}
+
 .u-bg-secondary-400 {
-  background-color: hsl(219deg, 61%, 37%);
+  background-color: hsl(14deg, 100%, 43%);
 }
 
 .u-bg-secondary-500 {
-  background-color: hsl(219deg, 89%, 20%);
+  background-color: hsl(14deg, 100%, 20%);
 }
 
 .u-bg-white-0 {
@@ -188,6 +109,94 @@
 
 .u-bg-black-1000 {
   background-color: hsl(0deg, 0%, 0%);
+}
+
+.u-clr-primary-50 {
+  color: hsl(213deg, 100%, 98%);
+}
+
+.u-clr-primary-100 {
+  color: hsl(223deg, 48%, 69%);
+}
+
+.u-clr-primary-200 {
+  color: hsl(219deg, 89%, 70%);
+}
+
+.u-clr-primary-300 {
+  color: hsl(219deg, 89%, 60%);
+}
+
+.u-clr-primary-400 {
+  color: hsl(223deg, 100%, 33%);
+}
+
+.u-clr-primary-500 {
+  color: hsl(223deg, 100%, 13%);
+}
+
+.u-clr-secondary-100 {
+  color: hsl(14deg, 100%, 80%);
+}
+
+.u-clr-secondary-200 {
+  color: hsl(14deg, 100%, 70%);
+}
+
+.u-clr-secondary-300 {
+  color: hsl(14deg, 100%, 60%);
+}
+
+.u-clr-secondary-400 {
+  color: hsl(14deg, 100%, 43%);
+}
+
+.u-clr-secondary-500 {
+  color: hsl(14deg, 100%, 20%);
+}
+
+.u-clr-white-0 {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.u-clr-white-100 {
+  color: hsl(0deg, 0%, 95%);
+}
+
+.u-clr-white-200 {
+  color: hsl(0deg, 0%, 87%);
+}
+
+.u-clr-white-300 {
+  color: hsl(0deg, 0%, 80%);
+}
+
+.u-clr-neutral-400 {
+  color: hsl(0deg, 0%, 60%);
+}
+
+.u-clr-neutral-500 {
+  color: hsl(0deg, 0%, 50%);
+}
+
+.u-clr-neutral-600 {
+  color: hsl(0deg, 0%, 40%);
+}
+
+.u-clr-neutral-700 {
+  color: hsl(0deg, 0%, 30%);
+}
+
+.u-clr-black-800 {
+  color: hsl(0deg, 0%, 20%);
+}
+
+.u-clr-black-900 {
+  color: hsl(0deg, 0%, 10%);
+}
+
+.u-clr-black-1000 {
+  color: hsl(0deg, 0%, 0%);
 }
 
 :root {
@@ -1115,108 +1124,87 @@
 }
 
 .u-mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .u-mx-0 {
-  margin-left: 0rem;
-  margin-right: 0rem;
+  margin-inline: 0rem;
 }
 
 .u-mx-0-5 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-inline: 0.5rem;
 }
 
 .u-mx-1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-inline: 1rem;
 }
 
 .u-mx-1-5 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-inline: 1.5rem;
 }
 
 .u-mx-2 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-inline: 2rem;
 }
 
 .u-mx-2-5 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-inline: 2.5rem;
 }
 
 .u-mx-3 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-inline: 3rem;
 }
 
 .u-mx-4 {
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-inline: 4rem;
 }
 
 .u-mx-5 {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-inline: 5rem;
 }
 
 .u-mx-6 {
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-inline: 6rem;
 }
 
 .u-mx-7 {
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-inline: 7rem;
 }
 
 .u-mx-8 {
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-inline: 8rem;
 }
 
 .u-mx-9 {
-  margin-left: 9rem;
-  margin-right: 9rem;
+  margin-inline: 9rem;
 }
 
 .u-mx-10 {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-inline: 10rem;
 }
 
 .u-mx-xsm {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-inline: 1rem;
 }
 
 .u-mx-sm {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-inline: 2rem;
 }
 
 .u-mx-md {
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-inline: 4rem;
 }
 
 .u-mx-lg {
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-inline: 6rem;
 }
 
 .u-mx-xl {
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-inline: 8rem;
 }
 
 .u-mx-2xl {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-inline: 10rem;
 }
 
 .u-my-auto {
@@ -1932,7 +1920,6 @@ html:focus-within {
 
 /* Set box-sizing & background color */
 body {
-  background-color: var(--clr-white-100);
   box-sizing: border-box;
 }
 
@@ -1988,15 +1975,10 @@ body {
 
 .secondary-heading {
   font-family: "Raleway", sans-serif;
-  font-size: var(--fs-850);
+  font-size: clamp(3rem, 3.5vw, 3.5rem);
   font-weight: var(--fw-bold);
   letter-spacing: 1rem;
   text-transform: uppercase;
-}
-@media (max-width: 37.5em) {
-  .secondary-heading {
-    font-size: var(--fs-800);
-  }
 }
 
 .secondary-heading-100 {
@@ -2011,25 +1993,6 @@ body {
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
-}
-
-.quote {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  font-style: italic;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.bullet-point {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.bullet-point:not(:last-child) {
-  margin-bottom: 2rem;
 }
 
 .align-items {
@@ -2092,11 +2055,11 @@ body {
 }
 
 .scrollButton {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   height: 6rem;
   width: 6rem;
-  cursor: pointer;
   position: fixed;
   right: 4rem;
   bottom: 4rem;
@@ -2170,7 +2133,7 @@ body {
   resize: vertical;
 }
 .form input[type=submit] {
-  background-color: hsl(219deg, 100%, 63%);
+  background-color: var(--clr-primary-400);
   color: var(--clr-white-0);
   padding: 12px 20px;
   border: none;
@@ -2639,7 +2602,7 @@ body {
 }
 
 .u-fs-primary-heading {
-  font-size: var(--fs-800);
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 
 .u-fs-secondary-heading {
@@ -2667,11 +2630,8 @@ body {
   text-align: center !important;
 }
 
-.u-md-center-text {
-  text-align: center !important;
-}
 @media (max-width: 768px) {
-  .u-md-center-text {
+  .u-center-text-md {
     text-align: center !important;
   }
 }/*# sourceMappingURL=main.css.map */

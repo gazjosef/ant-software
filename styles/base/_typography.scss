@@ -9,20 +9,16 @@ body {
 .primary-heading {
   max-width: 30ch;
 
-  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  font-size: $fs-primary-heading;
   font-weight: var(--fw-semi-bold);
 }
 
 .secondary-heading {
   font-family: $ff-secondary;
-  font-size: var(--fs-850);
+  font-size: clamp(3rem, 3.5vw, 3.5rem);
   font-weight: var(--fw-bold);
   letter-spacing: 1rem;
   text-transform: uppercase;
-
-  @include respond(phone) {
-    font-size: var(--fs-800);
-  }
 }
 
 .secondary-heading-100 {
@@ -32,32 +28,11 @@ body {
 .paragraph {
   max-width: 45ch;
 
-  font-size: clamp(1.75rem, 1.8vw, 2rem);
+  font-size: $fs-body;
   line-height: 2;
   text-align: justify;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
-  }
-}
-
-.quote {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-
-  font-style: italic;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.bullet-point {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  &:not(:last-child) {
-    margin-bottom: 2rem;
   }
 }

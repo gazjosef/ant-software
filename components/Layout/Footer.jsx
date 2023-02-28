@@ -15,8 +15,27 @@ export const Footer = () => {
 
   const currentYear = new Date().getFullYear();
 
+  const FooterNavItems = [
+    {
+      title: "Home",
+      url: "#home",
+    },
+    {
+      title: "About",
+      url: "#about",
+    },
+    {
+      title: "Services",
+      url: "#services",
+    },
+    {
+      title: "Contact",
+      url: "#contact",
+    },
+  ];
+
   return (
-    <footer className="footer | u-bg-primary-300 u-text-color-white-200">
+    <footer className="footer | u-bg-primary-400 u-clr-white-0">
       <div className="container | u-margin-top-medium | u-grid u-even-columns">
         <section ref={footerImgRef}>
           <Image
@@ -28,16 +47,16 @@ export const Footer = () => {
           />
 
           <div className="u-margin-bottom-medium u-mx-auto | u-flex">
-            <a href="www.facebook.com" className="u-mx-1 u-text-white">
+            <a href="www.facebook.com" className="u-mx-1 u-clr-white-0">
               <FaFacebook />
             </a>
-            <a href="www.instagram.com" className="u-mx-1 u-text-white">
+            <a href="www.instagram.com" className="u-mx-1 u-clr-white-0">
               <FaInstagram />
             </a>
-            <a href="www.linkedin.com" className="u-mx-1 u-text-white">
+            <a href="www.linkedin.com" className="u-mx-1 u-clr-white-0">
               <FaLinkedin />
             </a>
-            <a href="www.twitter.com" className="u-mx-1 u-text-white">
+            <a href="www.twitter.com" className="u-mx-1 u-clr-white-0">
               <FaTwitter />
             </a>
           </div>
@@ -45,39 +64,22 @@ export const Footer = () => {
 
         <section
           ref={footerTextRef}
-          className="u-mx-auto | u-grid u-even-columns | u-md-center-text"
+          className="u-mx-auto | u-grid u-even-columns | u-center-text-md"
         >
           <div className="u-margin-bottom-medium u-place-content-start-center">
             <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
               Nav Links
             </h2>
             <ul role="list" className="nav">
-              <li className="nav__item">
-                <a href="#home" className="nav__link | u-text-color-white-50">
-                  Home
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#about" className="nav__link | u-text-color-white-50">
-                  About
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#services"
-                  className="nav__link | u-text-color-white-50"
-                >
-                  Services
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#contact"
-                  className="nav__link | u-text-color-white-50"
-                >
-                  Contact
-                </a>
-              </li>
+              {FooterNavItems.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a className="nav__link | u-clr-white-0" href={item.url}>
+                      {item.title}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
