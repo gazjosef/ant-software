@@ -1,20 +1,9 @@
 //* COLORS
 
-//* --- Primary
-
-$color-primary-200: hsl(219, 100%, 63%); //* Dodger Blue
-$color-primary-250: hsl(210, 29%, 49%); //* Horizon Blue
-$color-primary-300: hsl(210, 28%, 29%); //* Pickled Bluewood
-$color-primary-400: hsl(219, 100%, 23%); //* Midnight Blue
-$clr-primary-400: hsl(219, 100%, 43%); //* 004EDC // Science Blue
-
 //* --- White to Black
+$color-white: var(--clr-white-0);
 $color-white: hsl(0, 0%, 100%); //* ffffff | White
-$color-white-50: hsl(0, 0%, 95%); //* f2f2f2 | Concrete White
-$color-white-100: hsl(0, 0%, 90%); //* e6e6e6 | Mercury White
-$color-white-200: hsl(0, 0%, 80%); //* cccccc | Silver White
-
-$color-black: hsl(0, 0%, 0%); //* 000000 | Black
+$color-black: var(--clr-black-1000);
 
 //* FONT
 

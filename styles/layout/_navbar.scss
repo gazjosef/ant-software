@@ -1,5 +1,5 @@
 .navbar {
-  border-bottom: 1px solid $color-white-100;
+  border-bottom: 1px solid var(--clr-white-200);
   height: 8rem;
   padding: 1rem 4rem;
   width: 100%;
@@ -73,7 +73,7 @@
 
     &.active {
       @include respond(tab-port) {
-        background: $color-white-50;
+        background: var(--clr-white-100);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -99,7 +99,7 @@
     }
 
     &:hover {
-      background-color: $color-primary-200;
+      background-color: var(--clr-primary-400);
       border-radius: 4px;
 
       color: $color-white;

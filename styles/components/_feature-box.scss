@@ -5,10 +5,9 @@
   min-height: 30rem;
   padding: 2.5rem;
 
-  color: $color-primary-300;
-  font-size: 1.5rem;
-
   display: grid;
+
+  font-size: 1.5rem;
 
   transition: transform 0.3s;
 
@@ -18,7 +17,7 @@
   }
 
   &__title {
-    color: $color-primary-400;
+    color: var(--clr-primary-400);
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -37,7 +36,7 @@
   }
 
   &:hover {
-    background-color: $color-primary-250;
+    background-color: var(--clr-primary-400);
     color: var(--clr-white-0);
     transform: translateY(-1.5rem) scale(1.03);
 

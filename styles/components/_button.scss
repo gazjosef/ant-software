@@ -36,8 +36,7 @@
       90deg,
       rgb(61, 135, 255),
       rgb(190, 61, 255),
-      rgb(126, 61, 255),
-      $color-primary-200
+      rgb(126, 61, 255)
     );
     box-shadow: rgb(190, 61, 255) 0px 4px 15px 0px;
   }
@@ -55,8 +54,8 @@
   bottom: 4rem;
   z-index: 1;
 
+  color: var(--clr-primary-200);
   font-size: 3rem;
-  color: $color-primary-250;
 
   &__icon {
     font-size: 8rem;

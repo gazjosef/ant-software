@@ -1885,7 +1885,7 @@ ORDER: Base + Typography > general layout + grid > page layout > components
 
 .hover-underline-animation:after {
   content: "";
-  background-color: hsl(219deg, 100%, 43%);
+  background-color: var(--clr-primary-400);
   width: 100%;
   height: 0.35rem;
   position: absolute;
@@ -2050,7 +2050,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .btn-moving-gradient--blue {
-  background-image: linear-gradient(90deg, rgb(61, 135, 255), rgb(190, 61, 255), rgb(126, 61, 255), hsl(219deg, 100%, 63%));
+  background-image: linear-gradient(90deg, rgb(61, 135, 255), rgb(190, 61, 255), rgb(126, 61, 255));
   box-shadow: rgb(190, 61, 255) 0px 4px 15px 0px;
 }
 
@@ -2064,8 +2064,8 @@ body {
   right: 4rem;
   bottom: 4rem;
   z-index: 1;
+  color: var(--clr-primary-200);
   font-size: 3rem;
-  color: hsl(210deg, 29%, 49%);
 }
 .scrollButton__icon {
   font-size: 8rem;
@@ -2074,12 +2074,11 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(var(--clr-black-1000), 0.15);
   min-height: 30rem;
   padding: 2.5rem;
-  color: hsl(210deg, 28%, 29%);
-  font-size: 1.5rem;
   display: grid;
+  font-size: 1.5rem;
   transition: transform 0.3s;
 }
 .feature-box > * {
@@ -2087,7 +2086,7 @@ body {
   margin-right: auto;
 }
 .feature-box__title {
-  color: hsl(219deg, 100%, 23%);
+  color: var(--clr-primary-400);
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2105,7 +2104,7 @@ body {
   }
 }
 .feature-box:hover {
-  background-color: hsl(210deg, 29%, 49%);
+  background-color: var(--clr-primary-400);
   color: var(--clr-white-0);
   transform: translateY(-1.5rem) scale(1.03);
 }
@@ -2115,22 +2114,22 @@ body {
 }
 
 .form {
+  background-color: var(--clr-white-100);
   border-radius: 0.5rem;
-  background-color: hsl(0deg, 0%, 90%);
   padding: 2rem;
   margin: 0 auto;
 }
 .form input[type=text],
 .form select,
 .form textarea {
-  width: 100%;
-  padding: 1.2rem;
   border: 1px solid #ccc;
   border-radius: 0.4rem;
   box-sizing: border-box;
-  margin-top: 6px;
   margin-bottom: 16px;
+  margin-top: 6px;
+  padding: 1.2rem;
   resize: vertical;
+  width: 100%;
 }
 .form input[type=submit] {
   background-color: var(--clr-primary-400);
@@ -2209,7 +2208,7 @@ body {
 }
 
 .navbar {
-  border-bottom: 1px solid hsl(0deg, 0%, 90%);
+  border-bottom: 1px solid var(--clr-white-200);
   height: 8rem;
   padding: 1rem 4rem;
   width: 100%;
@@ -2257,7 +2256,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .navbar__menu.active {
-    background: hsl(0deg, 0%, 95%);
+    background: var(--clr-white-100);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -2277,10 +2276,10 @@ body {
   }
 }
 .navbar__links:focus, .navbar__links:visited {
-  color: hsl(0deg, 0%, 0%);
+  color: var(--clr-black-1000);
 }
 .navbar__links:hover {
-  background-color: hsl(219deg, 100%, 63%);
+  background-color: var(--clr-primary-400);
   border-radius: 4px;
   color: hsl(0deg, 0%, 100%);
   transition: all 0.2s ease-out;
