@@ -13,7 +13,7 @@ const About = () => {
           </h2>
           <h1 className="primary-heading | u-mx-auto">
             Web development company that vows your{" "}
-            <span className="u-text-span">success</span>.
+            <span className="u-clr-primary-300">success</span>.
           </h1>
         </div>
 

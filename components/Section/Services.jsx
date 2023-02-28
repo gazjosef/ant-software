@@ -19,8 +19,8 @@ const Services = () => {
           </h2>
           <h1 className="primary-heading | u-mx-auto u-center-text">
             We provide{" "}
-            <span className="u-text-span">professional IT solutions</span> for
-            your business.
+            <span className="u-clr-primary-300">professional IT solutions</span>{" "}
+            for your business.
           </h1>
         </div>
 

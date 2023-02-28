@@ -67,9 +67,7 @@ export const Footer = () => {
           className="u-mx-auto | u-grid u-even-columns | u-center-text-md"
         >
           <div className="u-margin-bottom-medium u-place-content-start-center">
-            <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
-              Nav Links
-            </h2>
+            <h2 className="u-margin-bottom-small | u-uppercase">Nav Links</h2>
             <ul role="list" className="nav">
               {FooterNavItems.map((item, index) => {
                 return (
@@ -84,9 +82,7 @@ export const Footer = () => {
           </div>
 
           <div className="u-margin-bottom-medium u-place-content-start-center |  u-md-center-text">
-            <h2 className="secondary-heading-100 | u-text-color-secondary-300 u-margin-bottom-small">
-              Contact
-            </h2>
+            <h2 className="u-margin-bottom-small | u-uppercase">Contact</h2>
 
             <ul role="list" className="nav ">
               <li className="nav__item |  u-flex u-items-center">
