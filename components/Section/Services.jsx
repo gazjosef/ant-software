@@ -14,7 +14,7 @@ const Services = () => {
     <section id="services" className="section | u-bg-primary-50">
       <div className="container | u-center-text">
         <div ref={servicesTitleRef}>
-          <h2 className="secondary-heading | u-text-color-secondary-300 u-margin-bottom-medium">
+          <h2 className="secondary-heading | u-margin-bottom-medium">
             Services
           </h2>
           <h1 className="primary-heading | u-mx-auto u-center-text">
@@ -24,7 +24,10 @@ const Services = () => {
           </h1>
         </div>
 
-        <section className="section-services__grid" ref={servicesGridRef}>
+        <section
+          className="section-services__grid | u-mt-3"
+          ref={servicesGridRef}
+        >
           <div className="feature-box">
             <FaBriefcase size={70} className="u-margin-bottom-medium" />
             <h2 className="feature-box__title | u-margin-bottom-small">

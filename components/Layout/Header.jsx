@@ -13,15 +13,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header" ref={headerRef}>
+    <header className="header | u-bg-white-0" ref={headerRef}>
       <div className="container | u-flex u-items-center u-justify-between">
         <Link href="#home">
           <Image
             src="/img/black-logo.png"
             alt="Ant Software"
             className="header__logo"
-            width={196.875}
-            height={headerHeight}
+            width={196.88}
+            height={55.81}
           />
         </Link>
 

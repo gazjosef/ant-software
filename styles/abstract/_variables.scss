@@ -12,7 +12,7 @@ $ff-heading: $ff-primary;
 $fs-body: clamp(1.75rem, 1.8vw, 2rem);
 $fs-primary-heading: clamp(2.5rem, 3vw, 3.5rem);
 $fs-secondary-heading: var(--fs-700);
-$fs-nav: var(--fs-700);
+$fs-nav: clamp(1.6rem, 1.8vw, 2rem);
 $fs-button: var(--fs-300);
 
 // * --- Fluid Type

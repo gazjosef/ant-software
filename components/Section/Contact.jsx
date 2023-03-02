@@ -8,12 +8,12 @@ const Contact = () => {
   return (
     <section id="contact" className="section">
       <div className="container | u-mx-auto" ref={contactTitleRef}>
-        <h2 className="secondary-heading | u-text-color-secondary-300 u-margin-bottom-medium u-center-text">
+        <h2 className="secondary-heading | u-margin-bottom-medium | u-center-text">
           Contact
         </h2>
       </div>
 
-      <div className="container | u-mx-auto | u-grid u-even-columns u-gap">
+      <div className="container | u-grid u-even-columns u-gap-3">
         <section
           className="u-flex u-flex-col u-justify-between"
           ref={contactDetailsRef}

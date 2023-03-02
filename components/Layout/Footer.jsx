@@ -86,13 +86,17 @@ export const Footer = () => {
 
             <ul role="list" className="nav ">
               <li className="nav__item |  u-flex u-items-center">
-                <IconContext.Provider value={{ className: "u-mr-05 | u-fs-2" }}>
+                <IconContext.Provider
+                  value={{ className: "u-mr-0-5 | u-fs-2" }}
+                >
                   <FaPhone />
                 </IconContext.Provider>
                 : 0434 420 506
               </li>
               <li className="nav__item | u-flex u-items-center">
-                <IconContext.Provider value={{ className: "u-mr-05 | u-fs-2" }}>
+                <IconContext.Provider
+                  value={{ className: "u-mr-0-5 | u-fs-2" }}
+                >
                   <FaEnvelope />
                 </IconContext.Provider>
                 : ant@antsoftware.dev
@@ -104,8 +108,8 @@ export const Footer = () => {
 
       <section className="container | u-margin-top-medium u-mx-auto">
         <p className="u-center-text">
-          Copyright <span className="u-text-color-secondary-300">&copy;</span>{" "}
-          Ant Software {currentYear}
+          Copyright <span className="u-clr-secondary-300">&copy;</span> Ant
+          Software {currentYear}
         </p>
       </section>
     </footer>
