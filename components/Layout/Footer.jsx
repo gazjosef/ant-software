@@ -64,7 +64,7 @@ export const Footer = () => {
 
         <section
           ref={footerTextRef}
-          className="u-mx-auto | u-grid u-even-columns | u-center-text-md"
+          className="u-mx-auto | u-grid u-even-columns u-gap-3 | u-center-text-md"
         >
           <div className="u-margin-bottom-medium u-place-content-start-center">
             <h2 className="u-margin-bottom-small | u-uppercase">Nav Links</h2>

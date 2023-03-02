@@ -14,9 +14,7 @@ const Services = () => {
     <section id="services" className="section | u-bg-primary-50">
       <div className="container | u-center-text">
         <div ref={servicesTitleRef}>
-          <h2 className="secondary-heading | u-margin-bottom-medium">
-            Services
-          </h2>
+          <h2 className="secondary-heading">Services</h2>
           <h1 className="primary-heading | u-mx-auto u-center-text">
             We provide{" "}
             <span className="u-clr-primary-300">professional IT solutions</span>{" "}
