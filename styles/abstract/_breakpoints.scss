@@ -1,6 +1,22 @@
-// MEDIA QUERY MANAGER
-
 /*
+SCREEN SIZES
+
+0 - 350px:    Phone
+350 - 600px:    Phone
+600 - 900px:  Tablet Portrait
+900 - 1200px:  Tablet Landscape
+(1200 - 1800) is where our normal styles apply
+1800px+:       Big Desktop
+
+$breakpoint arguement choices:
+- sm-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+TAILWIND
+
 0 - 350px:    Phone
 350 - 600px:    Phone
 600 - 900px:  Tablet Portrait
@@ -22,7 +38,7 @@ ORDER: Base + Typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
   // * ///////////////////
-  // * SCREENS
+  // * SCREEN SIZES
   // * ///////////////////
 
   @if $breakpoint == sm-phone {
