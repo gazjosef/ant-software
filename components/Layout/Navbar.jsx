@@ -6,7 +6,6 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
-    console.log("click");
     setToggle((t) => !t);
   };
 
@@ -36,7 +35,7 @@ const Navbar = () => {
         id="primary-navigation"
         data-visible="false"
         role="list"
-        className={`navbar__menu | u-flex u-items-center u-gap-3
+        className={`navbar__menu | u-flex u-items-center u-gap-2
           ${toggle ? "navbar__active" : ""}
             `}
       >
