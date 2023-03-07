@@ -154,7 +154,7 @@
     @if not(type-of($value) == "number") {
       margin-top: #{$value};
     } @else {
-      margin-top: #{$value}rem;
+      margin-top: #{$value}rem !important;
     }
   }
 }
@@ -165,7 +165,7 @@
     @if not(type-of($value) == "number") {
       margin-bottom: #{$value};
     } @else {
-      margin-bottom: #{$value}rem;
+      margin-bottom: #{$value}rem !important;
     }
   }
 }
@@ -176,7 +176,7 @@
     @if not(type-of($value) == "number") {
       margin-left: #{$value};
     } @else {
-      margin-left: #{$value}rem;
+      margin-left: #{$value}rem !important;
     }
   }
 }
@@ -187,7 +187,7 @@
     @if not(type-of($value) == "number") {
       margin-right: #{$value};
     } @else {
-      margin-right: #{$value}rem;
+      margin-right: #{$value}rem !important;
     }
   }
 }

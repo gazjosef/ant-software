@@ -6,6 +6,7 @@ const Navbar2 = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
+    console.log("click");
     setToggle((t) => !t);
   };
   const MenuItems = [
@@ -34,13 +35,13 @@ const Navbar2 = () => {
         id="primary-navigation"
         data-visible="false"
         role="list"
-        className={`navbar2__list | u-flex u-items-center
-          ${toggle ? "active" : ""}
+        className={`navbar2__menu | u-flex u-items-center u-gap-3
+          ${toggle ? "navbar2__active" : ""}
             `}
       >
         {MenuItems.map((item, index) => {
           return (
-            <li key={index} className="hover-underline-animation | u-mx-1">
+            <li key={index} className="hover-underline-animation">
               <a
                 className="u-clr-black-1000 u-ff-nav u-fw-semi-bold u-uppercase"
                 href={item.url}

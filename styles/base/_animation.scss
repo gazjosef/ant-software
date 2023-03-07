@@ -11,11 +11,15 @@
 
   position: absolute;
   transform: scaleX(0);
-  bottom: -2rem;
+  bottom: -1rem;
   left: 0;
 
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+
+  @include respond(sm) {
+    background-color: var(--clr-white-0);
+  }
 }
 
 .hover-underline-animation:hover:after {

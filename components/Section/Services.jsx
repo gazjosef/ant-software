@@ -15,7 +15,7 @@ const Services = () => {
       <div className="container | u-center-text">
         <div ref={servicesTitleRef}>
           <h2 className="secondary-heading">Services</h2>
-          <h1 className="primary-heading | u-mx-auto u-center-text">
+          <h1 className="primary-heading | u-mx-auto">
             We provide{" "}
             <span className="u-clr-primary-300">professional IT solutions</span>{" "}
             for your business.
