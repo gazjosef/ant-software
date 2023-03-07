@@ -4,7 +4,7 @@
   &__menu {
     @include respond(sm) {
       background-color: steelblue;
-      height: 93vh;
+      height: 40vh;
       width: 100%;
       padding: 5rem;
 
@@ -24,14 +24,12 @@
 
   &__mobile-nav-toggle {
     cursor: pointer;
-    background: red;
     aspect-ratio: 1;
-    width: 5rem;
+    width: 2rem;
 
     display: none;
-    // position: absolute;
-    // top: 0rem;
-    // left: 15rem;
+
+    font-size: 3rem;
 
     @include respond(sm) {
       display: block;
