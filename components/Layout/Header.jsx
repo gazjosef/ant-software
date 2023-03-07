@@ -1,19 +1,11 @@
-import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../UI/Button/Button";
-import Navbar2 from "./Navbar2";
+
+import Navbar from "./Navbar";
 
 const Header = () => {
-  const [headerHeight, setHeaderHeight] = useState(0);
-  const headerRef = useRef(null);
-
-  useEffect(() => {
-    setHeaderHeight(headerRef.current.offsetHeight);
-  }, []);
-
   return (
-    <header className="header | u-bg-white-0" ref={headerRef}>
+    <header className="header | u-bg-white-0">
       <div className="container | u-flex u-items-center u-justify-between">
         <Link href="#home">
           <Image
@@ -25,13 +17,7 @@ const Header = () => {
           />
         </Link>
 
-        <Navbar2 />
-
-        {/* <Button
-          className="mobile-nav-toggle"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-        /> */}
+        <Navbar />
       </div>
     </header>
   );

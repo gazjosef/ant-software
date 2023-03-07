@@ -2,13 +2,14 @@ import { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar2 = () => {
+const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
     console.log("click");
     setToggle((t) => !t);
   };
+
   const MenuItems = [
     {
       title: "Home",
@@ -29,14 +30,14 @@ const Navbar2 = () => {
   ];
 
   return (
-    <nav className="navbar2 | u-flex u-items-center | u-fs-nav">
+    <nav className="navbar | u-flex u-items-center | u-fs-nav">
       {/* UNORDERED LIST */}
       <ul
         id="primary-navigation"
         data-visible="false"
         role="list"
-        className={`navbar2__menu | u-flex u-items-center u-gap-3
-          ${toggle ? "navbar2__active" : ""}
+        className={`navbar__menu | u-flex u-items-center u-gap-3
+          ${toggle ? "navbar__active" : ""}
             `}
       >
         {MenuItems.map((item, index) => {
@@ -55,7 +56,7 @@ const Navbar2 = () => {
 
       {/* TOGGLE BUTTON */}
       <div
-        className="navbar2__mobile-nav-toggle sr-only"
+        className="navbar__mobile-nav-toggle sr-only"
         aria-label="Toggle navigation"
         aria-expanded={toggle}
       >
@@ -71,4 +72,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar;
