@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="section | u-bg-primary-50">
-      <div className="container | u-margin-top-huge | u-grid u-even-columns u-gap-3">
+      <div className="container | u-mt-3xl | u-grid u-even-columns u-gap-3">
         <div ref={homeImgRef}>
           <Image
             src="/img/illustrations/undraw_responsive_6c8s.svg"
@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
         <div ref={homeTextRef}>
-          <h1 className="primary-heading | u-margin-bottom-small">
+          <h1 className="primary-heading | u-mb-sm">
             Get scalable, modern and reliable{" "}
             <span className="u-clr-primary-300">custom software</span>.
           </h1>
