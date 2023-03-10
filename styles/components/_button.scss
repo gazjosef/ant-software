@@ -46,15 +46,15 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  height: 6rem;
-  width: 6rem;
+  height: 8rem;
+  width: 8rem;
 
   position: fixed;
   right: 4rem;
   bottom: 4rem;
   z-index: 1;
 
-  color: var(--clr-primary-200);
+  color: var(--clr-primary-300);
   font-size: 3rem;
 
   &__icon {

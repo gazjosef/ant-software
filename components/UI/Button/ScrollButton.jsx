@@ -28,12 +28,12 @@ function ScrollButton() {
   }
 
   return (
-    <button className="scrollButton">
+    <button
+      className="scrollButton | u-flex u-items-center u-justify-center"
+      style={{ display: visible ? "inline" : "none" }}
+    >
       <IconContext.Provider value={{ className: "scrollButton__icon" }}>
-        <FaArrowCircleUp
-          onClick={scrollToTop}
-          style={{ display: visible ? "inline" : "none" }}
-        />
+        <FaArrowCircleUp onClick={scrollToTop} />
       </IconContext.Provider>
     </button>
   );
