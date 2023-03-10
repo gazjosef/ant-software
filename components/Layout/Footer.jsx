@@ -36,17 +36,16 @@ export const Footer = () => {
 
   return (
     <footer className="footer | u-bg-black-800 u-clr-white-0">
-      <div className="container | u-margin-top-medium | u-grid u-even-columns">
+      <div className="container border-line | u-margin-top-medium u-mb-md | u-grid u-even-columns">
         <div>
           <Image
             src="/img/white-logo.png"
             alt="Ant Software"
-            height="111.625"
-            width="393.75"
-            className="u-mb-sm"
+            height="100"
+            width="352.5"
           />
 
-          <div className="u-mx-auto | u-flex">
+          <div className="u-mx-auto u-mt-sm | u-flex">
             <a href="www.facebook.com" className="u-mx-1 u-clr-white-0">
               <FaFacebook />
             </a>
@@ -78,7 +77,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="u-place-content-start-center | u-md-center-text">
+          <div className="u-place-content-start-center">
             <h2 className="u-margin-bottom-small | u-uppercase">Contact</h2>
 
             <ul role="list">
