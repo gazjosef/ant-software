@@ -62,7 +62,7 @@ export const Footer = () => {
         </div>
 
         <div className="u-mx-auto | u-grid u-even-columns u-gap-3 | u-center-text-md">
-          <div className="u-place-content-start-center">
+          <div className="u-mb-sm | u-place-content-start-center | u-center-text-md">
             <h2 className="u-margin-bottom-small | u-uppercase">Nav Links</h2>
             <ul role="list">
               {FooterNavItems.map((item, index) => {
@@ -77,23 +77,26 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="u-place-content-start-center">
+          <div className="u-mb-sm | u-place-content-start-center | u-center-text-md">
             <h2 className="u-margin-bottom-small | u-uppercase">Contact</h2>
 
-            <ul role="list">
-              <li className="u-flex u-items-center">
+            <div className="u-center-text-md">
+              <p className="u-flex u-items-center">
                 <IconContext.Provider value={{ className: "u-mr-0-5" }}>
                   <FaPhone />
                 </IconContext.Provider>
                 : 0434 420 506
-              </li>
-              <li className="u-flex u-items-center">
+              </p>
+            </div>
+
+            <div className="u-center-text-md">
+              <p className="u-flex u-items-center">
                 <IconContext.Provider value={{ className: "u-mr-0-5" }}>
                   <FaEnvelope />
                 </IconContext.Provider>
                 : ant@antsoftware.dev
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
         </div>
       </div>

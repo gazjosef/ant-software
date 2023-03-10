@@ -5,7 +5,7 @@
     & > *:not(:last-child) {
       border-right: 1px dotted var(--clr-white-0);
 
-      @include respond(sm) {
+      @include respond(tab-port) {
         border-right: none;
       }
     }
