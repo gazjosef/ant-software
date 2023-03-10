@@ -2,10 +2,11 @@
 
 @import "abstract/breakpoints";
 @import "abstract/mixins";
-@import "abstract/variables";
 
 @import "base/animation";
 @import "base/base";
+@import "base/elements";
+@import "base/screen-reader";
 @import "base/typography";
 
 @import "components/button";
@@ -13,7 +14,6 @@
 @import "components/form";
 @import "components/post";
 
-@import "layout/elements";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navbar";

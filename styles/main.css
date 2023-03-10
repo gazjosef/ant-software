@@ -1,202 +1,166 @@
 :root {
-  --clr-primary-50: hsl(213deg, 100%, 98%);
-  --clr-primary-100: hsl(223deg, 48%, 69%);
-  --clr-primary-200: hsl(219deg, 89%, 70%);
-  --clr-primary-300: hsl(219deg, 89%, 60%);
-  --clr-primary-400: hsl(223deg, 100%, 33%);
-  --clr-primary-500: hsl(223deg, 100%, 13%);
-  --clr-secondary-100: hsl(14deg, 100%, 80%);
-  --clr-secondary-200: hsl(14deg, 100%, 70%);
-  --clr-secondary-300: hsl(14deg, 100%, 60%);
-  --clr-secondary-400: hsl(14deg, 100%, 43%);
-  --clr-secondary-500: hsl(14deg, 100%, 20%);
-  --clr-white-0: hsl(0deg, 0%, 100%);
-  --clr-white-100: hsl(0deg, 0%, 95%);
-  --clr-white-200: hsl(0deg, 0%, 87%);
-  --clr-white-300: hsl(0deg, 0%, 80%);
-  --clr-neutral-400: hsl(0deg, 0%, 60%);
-  --clr-neutral-500: hsl(0deg, 0%, 50%);
-  --clr-neutral-600: hsl(0deg, 0%, 40%);
-  --clr-neutral-700: hsl(0deg, 0%, 30%);
-  --clr-black-800: hsl(0deg, 0%, 20%);
-  --clr-black-900: hsl(0deg, 0%, 10%);
-  --clr-black-1000: hsl(0deg, 0%, 0%);
+  --clr-primary-50: hsl(213, 100%, 98%);
+  --clr-primary-100: hsl(223, 48%, 69%);
+  --clr-primary-200: hsl(219, 89%, 70%);
+  --clr-primary-300: hsl(219, 89%, 60%);
+  --clr-primary-400: hsl(223, 100%, 33%);
+  --clr-primary-500: hsl(223, 100%, 13%);
+  --clr-secondary-100: hsl(51, 100%, 50%);
+  --clr-white-0: hsl(0, 0%, 100%);
+  --clr-white-100: hsl(0, 0%, 95%);
+  --clr-white-200: hsl(0, 0%, 87%);
+  --clr-white-300: hsl(0, 0%, 80%);
+  --clr-neutral-400: hsl(0, 0%, 60%);
+  --clr-neutral-500: hsl(0, 0%, 50%);
+  --clr-neutral-600: hsl(0, 0%, 40%);
+  --clr-neutral-700: hsl(0, 0%, 30%);
+  --clr-black-800: hsl(0, 0%, 20%);
+  --clr-black-900: hsl(0, 0%, 10%);
+  --clr-black-1000: hsl(0, 0%, 0%);
 }
 
 .u-bg-primary-50 {
-  background-color: hsl(213deg, 100%, 98%);
+  background-color: hsl(213, 100%, 98%);
 }
 
 .u-bg-primary-100 {
-  background-color: hsl(223deg, 48%, 69%);
+  background-color: hsl(223, 48%, 69%);
 }
 
 .u-bg-primary-200 {
-  background-color: hsl(219deg, 89%, 70%);
+  background-color: hsl(219, 89%, 70%);
 }
 
 .u-bg-primary-300 {
-  background-color: hsl(219deg, 89%, 60%);
+  background-color: hsl(219, 89%, 60%);
 }
 
 .u-bg-primary-400 {
-  background-color: hsl(223deg, 100%, 33%);
+  background-color: hsl(223, 100%, 33%);
 }
 
 .u-bg-primary-500 {
-  background-color: hsl(223deg, 100%, 13%);
+  background-color: hsl(223, 100%, 13%);
 }
 
 .u-bg-secondary-100 {
-  background-color: hsl(14deg, 100%, 80%);
-}
-
-.u-bg-secondary-200 {
-  background-color: hsl(14deg, 100%, 70%);
-}
-
-.u-bg-secondary-300 {
-  background-color: hsl(14deg, 100%, 60%);
-}
-
-.u-bg-secondary-400 {
-  background-color: hsl(14deg, 100%, 43%);
-}
-
-.u-bg-secondary-500 {
-  background-color: hsl(14deg, 100%, 20%);
+  background-color: hsl(51, 100%, 50%);
 }
 
 .u-bg-white-0 {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .u-bg-white-100 {
-  background-color: hsl(0deg, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
 }
 
 .u-bg-white-200 {
-  background-color: hsl(0deg, 0%, 87%);
+  background-color: hsl(0, 0%, 87%);
 }
 
 .u-bg-white-300 {
-  background-color: hsl(0deg, 0%, 80%);
+  background-color: hsl(0, 0%, 80%);
 }
 
 .u-bg-neutral-400 {
-  background-color: hsl(0deg, 0%, 60%);
+  background-color: hsl(0, 0%, 60%);
 }
 
 .u-bg-neutral-500 {
-  background-color: hsl(0deg, 0%, 50%);
+  background-color: hsl(0, 0%, 50%);
 }
 
 .u-bg-neutral-600 {
-  background-color: hsl(0deg, 0%, 40%);
+  background-color: hsl(0, 0%, 40%);
 }
 
 .u-bg-neutral-700 {
-  background-color: hsl(0deg, 0%, 30%);
+  background-color: hsl(0, 0%, 30%);
 }
 
 .u-bg-black-800 {
-  background-color: hsl(0deg, 0%, 20%);
+  background-color: hsl(0, 0%, 20%);
 }
 
 .u-bg-black-900 {
-  background-color: hsl(0deg, 0%, 10%);
+  background-color: hsl(0, 0%, 10%);
 }
 
 .u-bg-black-1000 {
-  background-color: hsl(0deg, 0%, 0%);
+  background-color: hsl(0, 0%, 0%);
 }
 
 .u-clr-primary-50 {
-  color: hsl(213deg, 100%, 98%);
+  color: hsl(213, 100%, 98%);
 }
 
 .u-clr-primary-100 {
-  color: hsl(223deg, 48%, 69%);
+  color: hsl(223, 48%, 69%);
 }
 
 .u-clr-primary-200 {
-  color: hsl(219deg, 89%, 70%);
+  color: hsl(219, 89%, 70%);
 }
 
 .u-clr-primary-300 {
-  color: hsl(219deg, 89%, 60%);
+  color: hsl(219, 89%, 60%);
 }
 
 .u-clr-primary-400 {
-  color: hsl(223deg, 100%, 33%);
+  color: hsl(223, 100%, 33%);
 }
 
 .u-clr-primary-500 {
-  color: hsl(223deg, 100%, 13%);
+  color: hsl(223, 100%, 13%);
 }
 
 .u-clr-secondary-100 {
-  color: hsl(14deg, 100%, 80%);
-}
-
-.u-clr-secondary-200 {
-  color: hsl(14deg, 100%, 70%);
-}
-
-.u-clr-secondary-300 {
-  color: hsl(14deg, 100%, 60%);
-}
-
-.u-clr-secondary-400 {
-  color: hsl(14deg, 100%, 43%);
-}
-
-.u-clr-secondary-500 {
-  color: hsl(14deg, 100%, 20%);
+  color: hsl(51, 100%, 50%);
 }
 
 .u-clr-white-0 {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .u-clr-white-100 {
-  color: hsl(0deg, 0%, 95%);
+  color: hsl(0, 0%, 95%);
 }
 
 .u-clr-white-200 {
-  color: hsl(0deg, 0%, 87%);
+  color: hsl(0, 0%, 87%);
 }
 
 .u-clr-white-300 {
-  color: hsl(0deg, 0%, 80%);
+  color: hsl(0, 0%, 80%);
 }
 
 .u-clr-neutral-400 {
-  color: hsl(0deg, 0%, 60%);
+  color: hsl(0, 0%, 60%);
 }
 
 .u-clr-neutral-500 {
-  color: hsl(0deg, 0%, 50%);
+  color: hsl(0, 0%, 50%);
 }
 
 .u-clr-neutral-600 {
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0, 0%, 40%);
 }
 
 .u-clr-neutral-700 {
-  color: hsl(0deg, 0%, 30%);
+  color: hsl(0, 0%, 30%);
 }
 
 .u-clr-black-800 {
-  color: hsl(0deg, 0%, 20%);
+  color: hsl(0, 0%, 20%);
 }
 
 .u-clr-black-900 {
-  color: hsl(0deg, 0%, 10%);
+  color: hsl(0, 0%, 10%);
 }
 
 .u-clr-black-1000 {
-  color: hsl(0deg, 0%, 0%);
+  color: hsl(0, 0%, 0%);
 }
 
 :root {
@@ -871,6 +835,10 @@
   margin-top: 10rem !important;
 }
 
+.u-mt-3xl {
+  margin-top: 12rem !important;
+}
+
 .u-mb-auto {
   margin-bottom: auto;
 }
@@ -953,6 +921,10 @@
 
 .u-mb-2xl {
   margin-bottom: 10rem !important;
+}
+
+.u-mb-3xl {
+  margin-bottom: 12rem !important;
 }
 
 .u-ml-auto {
@@ -1039,6 +1011,10 @@
   margin-left: 10rem !important;
 }
 
+.u-ml-3xl {
+  margin-left: 12rem !important;
+}
+
 .u-mr-auto {
   margin-right: auto;
 }
@@ -1123,6 +1099,10 @@
   margin-right: 10rem !important;
 }
 
+.u-mr-3xl {
+  margin-right: 12rem !important;
+}
+
 .u-mx-auto {
   margin-inline: auto;
 }
@@ -1205,6 +1185,10 @@
 
 .u-mx-2xl {
   margin-inline: 10rem;
+}
+
+.u-mx-3xl {
+  margin-inline: 12rem;
 }
 
 .u-my-auto {
@@ -1312,6 +1296,11 @@
   margin-bottom: 10rem;
 }
 
+.u-my-3xl {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
 .u-pt-auto {
   padding-top: auto;
 }
@@ -1394,6 +1383,10 @@
 
 .u-pt-2xl {
   padding-top: 10rem;
+}
+
+.u-pt-3xl {
+  padding-top: 12rem;
 }
 
 .u-pb-auto {
@@ -1480,6 +1473,10 @@
   padding-bottom: 10rem;
 }
 
+.u-pb-3xl {
+  padding-bottom: 12rem;
+}
+
 .u-pl-auto {
   padding-left: auto;
 }
@@ -1564,6 +1561,10 @@
   padding-left: 10rem;
 }
 
+.u-pl-3xl {
+  padding-left: 12rem;
+}
+
 .u-pr-auto {
   padding-right: auto;
 }
@@ -1646,6 +1647,10 @@
 
 .u-pr-2xl {
   padding-right: 10rem;
+}
+
+.u-pr-3xl {
+  padding-right: 12rem;
 }
 
 .u-px-auto {
@@ -1753,6 +1758,11 @@
   padding-right: 10rem;
 }
 
+.u-px-3xl {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
 .u-py-auto {
   padding-top: auto;
   padding-bottom: auto;
@@ -1858,6 +1868,11 @@
   padding-bottom: 10rem;
 }
 
+.u-py-3xl {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 /*
 SCREEN SIZES
 
@@ -1895,7 +1910,6 @@ ORDER: Base + Typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,28,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -1908,10 +1922,15 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   height: 0.4rem;
   position: absolute;
   transform: scaleX(0);
-  bottom: -2rem;
+  bottom: -1rem;
   left: 0;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+@media (max-width: 40em) {
+  .hover-underline-animation:after {
+    background-color: var(--clr-white-0);
+  }
 }
 
 .hover-underline-animation:hover:after {
@@ -1977,6 +1996,66 @@ a:not([class]) {
     scroll-behavior: auto !important;
   }
 }
+.container {
+  margin-inline: auto;
+  width: min(90%, 120rem);
+}
+
+.section {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 10rem 20rem;
+}
+@media (max-width: 75em) {
+  .section {
+    padding: 7.5rem 15rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .section {
+    padding: 5rem 10rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .section {
+    padding: 2.5rem 5rem;
+  }
+}
+@media (max-width: 21.875em) {
+  .section {
+    padding: 1rem 2rem;
+  }
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+.screenreader-text:focus {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
 body {
   color: var(--clr-black-900);
   font-family: "Poppins", sans-serif;
@@ -2152,37 +2231,6 @@ body {
      object-fit: cover;
 }
 
-.container {
-  margin-inline: auto;
-  width: min(90%, 120rem);
-}
-
-.section {
-  min-height: 100vh;
-  min-height: 100svh;
-  padding: 10rem 20rem;
-}
-@media (max-width: 75em) {
-  .section {
-    padding: 7.5rem 15rem;
-  }
-}
-@media (max-width: 56.25em) {
-  .section {
-    padding: 5rem 10rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .section {
-    padding: 2.5rem 5rem;
-  }
-}
-@media (max-width: 21.875em) {
-  .section {
-    padding: 1rem 2rem;
-  }
-}
-
 .footer {
   padding: 0.5rem 0;
 }
@@ -2198,36 +2246,37 @@ body {
   justify-content: center;
 }
 
-.navbar2 {
+.navbar {
   position: relative;
 }
-.navbar2__mobile-nav-toggle {
-  background: red;
+@media (max-width: 40em) {
+  .navbar__menu {
+    background-color: steelblue;
+    height: 40vh;
+    width: 100%;
+    padding: 5rem;
+    position: fixed;
+    flex-direction: column;
+    top: 0vh;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+.navbar__active {
+  transform: translateX(0);
+}
+.navbar__mobile-nav-toggle {
+  cursor: pointer;
   aspect-ratio: 1;
-  width: 2.5rem;
+  width: 2rem;
   display: none;
-  position: absolute;
-  top: 0rem;
-  left: 20rem;
+  font-size: 3rem;
 }
 @media (max-width: 40em) {
-  .navbar2__mobile-nav-toggle {
+  .navbar__mobile-nav-toggle {
     display: block;
     z-index: 9999;
-  }
-}
-@media (max-width: 40em) {
-  .navbar2__list {
-    background-color: steelblue;
-    padding: min(20vh, 10rem) 2rem;
-    position: fixed;
-    inset: 0 0 0 0;
-    flex-direction: column;
-    z-index: 1000;
-    transform: translateY(-50%);
-  }
-  .navbar2__list[data-visible=true] {
-    transform: translateY(0);
   }
 }
 

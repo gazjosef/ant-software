@@ -35,9 +35,9 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="footer | u-bg-black-900 u-clr-white-0">
+    <footer className="footer | u-bg-black-800 u-clr-white-0">
       <div className="container | u-margin-top-medium | u-grid u-even-columns">
-        <div ref={footerImgRef}>
+        <div>
           <Image
             src="/img/white-logo.png"
             alt="Ant Software"
@@ -62,10 +62,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div
-          ref={footerTextRef}
-          className="u-mx-auto | u-grid u-even-columns u-gap-3 | u-center-text-md"
-        >
+        <div className="u-mx-auto | u-grid u-even-columns u-gap-3 | u-center-text-md">
           <div className="u-place-content-start-center">
             <h2 className="u-margin-bottom-small | u-uppercase">Nav Links</h2>
             <ul role="list">
@@ -104,7 +101,7 @@ export const Footer = () => {
 
       <section className="container | u-margin-top-medium u-mx-auto">
         <p className="u-center-text">
-          Copyright <span className="u-clr-secondary-300">&copy;</span> Ant
+          Copyright <span className="u-clr-secondary-100">&copy;</span> Ant
           Software {currentYear}
         </p>
       </section>
