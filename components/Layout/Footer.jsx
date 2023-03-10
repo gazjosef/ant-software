@@ -45,7 +45,7 @@ export const Footer = () => {
             width="352.5"
           />
 
-          <div className="u-mx-auto u-mt-sm | u-flex">
+          <div className="u-mx-auto u-my-sm | u-flex">
             <a href="www.facebook.com" className="u-mx-1 u-clr-white-0">
               <FaFacebook />
             </a>
