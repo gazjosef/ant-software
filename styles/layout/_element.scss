@@ -1,0 +1,22 @@
+.container {
+  width: min(1160px, 100% - 4rem);
+  margin-inline: auto;
+}
+
+.section {
+  min-height: 95vh;
+  min-height: 95svh;
+  padding: 10rem 5rem;
+
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  @include respond(phone) {
+    padding: 5rem;
+  }
+
+  @include respond(sm-phone) {
+    padding: 1rem 2rem;
+  }
+}

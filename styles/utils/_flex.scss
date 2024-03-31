@@ -8,22 +8,30 @@
   flex-direction: column;
 }
 
-.u-flex-row {
-  flex-direction: row;
+.u-flex-wrap {
+  flex-wrap: wrap;
 }
 
 .u-items-center {
   align-items: center;
 }
 
-.u-justify-center {
-  justify-content: center;
+.u-items-start {
+  align-items: flex-start;
 }
 
 .u-justify-between {
   justify-content: space-between;
 }
 
-.u-justify-items-end {
-  justify-items: end;
+.u-justify-center {
+  justify-content: center;
+}
+
+.u-justify-start {
+  justify-content: flex-start;
+}
+
+.u-justify-end {
+  justify-content: flex-end;
 }
