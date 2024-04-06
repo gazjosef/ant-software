@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/gazjosef/ant-software">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/favicon_io/android-chrome-512x512.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Ant Software</h3>
@@ -77,7 +77,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `gazjosef`, `ant-software`, `twitter_handle`, `gareth-h-a32448191`, `gmail`, `email`, `Weather App`, `project_description`
+<!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `gazjosef`, `ant-software`, `twitter_handle`, `gareth-h-a32448191`, `gmail`, `email`, `Weather App`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,12 +94,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 
 - npm
   ```sh
