@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/gazjosef/ant-software">
-    <img src="img/favicon_io/android-chrome-512x512.png" alt="Logo" width="80" height="80">
+    <img src="img/favicon_io/android-chrome-512x512.png" alt="Ant Software Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Ant Software</h3>
