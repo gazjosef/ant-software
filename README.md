@@ -149,7 +149,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Email: garethjhinf@gmail.com
+Email: garethjhind@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
