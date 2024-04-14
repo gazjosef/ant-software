@@ -47,22 +47,6 @@ const Footer: React.FC = () => {
           />
         </div>
         <div className="footer__links | u-margin-x-auto">
-          {/* <div className="footer__social-media | u-margin-bottom-small">
-            <a href="www.facebook.com">
-              <FaFacebook size="4rem" />
-            </a>
-            <a href="www.instagram.com">
-              <FaInstagram size="4rem" />
-            </a>
-            <a href="www.linkedin.com">
-              <FaLinkedin size="4rem" />
-            </a>
-            <a href="www.twitter.com">
-              <FaTwitter size="4rem" />
-            </a>
-          </div> */}
-
-          {/* <hr /> */}
           <nav>
             <ul
               role="list"
