@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/gazjosef/ant-software">
-    <img src="img/favicon_io/android-chrome-512x512.png" alt="Ant Software Logo" width="80" height="80">
+    <img src="public/img/favicon_io/android-chrome-512x512.png" alt="Ant Software Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Ant Software</h3>
@@ -149,7 +149,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Email: garethjhinf@gmail.com
+Email: garethjhind@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
