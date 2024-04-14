@@ -2372,6 +2372,23 @@ body {
 .navbar {
   position: relative;
 }
+.navbar li a {
+  position: relative;
+  color: #4d4b4b;
+  text-transform: uppercase;
+  transition: margin-top 0.3s ease;
+}
+.navbar li a:hover {
+  margin-top: -5px; /* Adjust this value as per your requirement */
+  color: var(--clr-primary-400);
+}
+.navbar li a:hover::before {
+  content: "";
+  color: #000;
+  bottom: -2px;
+  width: 30px;
+  height: 1px;
+}
 @media (max-width: 40em) {
   .navbar__menu {
     background-color: steelblue;
@@ -2392,7 +2409,6 @@ body {
 .navbar__mobile-nav-toggle {
   cursor: pointer;
   aspect-ratio: 1;
-  width: 2rem;
   display: none;
   font-size: 3rem;
 }

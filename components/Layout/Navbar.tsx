@@ -40,19 +40,14 @@ const Navbar: React.FC = () => {
         id="primary-navigation"
         data-visible="false"
         role="list"
-        className={`navbar__menu | u-flex u-items-center u-gap-2
+        className={`navbar__menu | u-flex u-items-center u-gap-4
           ${toggle ? "navbar__active" : ""}
             `}
       >
         {MenuItems.map((item: MenuItem, index: number) => {
           return (
             <li key={index} className="hover-underline-animation">
-              <a
-                className="u-clr-black-1000 u-ff-nav u-fw-semi-bold u-uppercase"
-                href={item.url}
-              >
-                {item.title}
-              </a>
+              <a href={item.url}>{item.title}</a>
             </li>
           );
         })}
