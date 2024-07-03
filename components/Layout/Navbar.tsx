@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconContext } from "react-icons";
+// import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 interface MenuItem {
@@ -35,26 +35,20 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar | u-flex u-items-center | u-fs-nav">
-      {/* UNORDERED LIST */}
-      <ul
-        id="primary-navigation"
-        data-visible="false"
-        role="list"
-        className={`navbar__menu | u-flex u-items-center u-gap-4
-          ${toggle ? "navbar__active" : ""}
-            `}
-      >
-        {MenuItems.map((item: MenuItem, index: number) => {
-          return (
-            <li key={index} className="hover-underline-animation">
-              <a href={item.url}>{item.title}</a>
-            </li>
-          );
-        })}
-      </ul>
-
+      <NavbarList toggle={toggle}>
+        {MenuItems &&
+          MenuItems.map((item: MenuItem) => {
+            return (
+              <NavbarListLink
+                key={item.title}
+                title={item.title}
+                url={item.url}
+              />
+            );
+          })}
+      </NavbarList>
       {/* TOGGLE BUTTON */}
-      <div
+      {/* <div
         className="navbar__mobile-nav-toggle sr-only"
         aria-label="Toggle navigation"
         aria-expanded={toggle}
@@ -66,9 +60,67 @@ const Navbar: React.FC = () => {
             <FaBars onClick={handleClick} />
           )}
         </IconContext.Provider>
-      </div>
+      </div> */}
+
+      <NavbarToggle toggle={toggle}>
+        {toggle ? (
+          <FaTimes onClick={handleClick} />
+        ) : (
+          <FaBars onClick={handleClick} />
+        )}
+      </NavbarToggle>
     </nav>
   );
 };
 
 export default Navbar;
+
+interface NavbarListProps {
+  toggle: boolean;
+  children: React.ReactNode;
+}
+
+function NavbarList({ toggle, children }: NavbarListProps) {
+  return (
+    <ul
+      id="primary-navigation"
+      data-visible="false"
+      role="list"
+      className={`navbar__menu | u-flex u-items-center u-gap-4
+              ${toggle ? "navbar__active" : ""}
+        `}
+    >
+      {children}
+    </ul>
+  );
+}
+
+interface NavbarListLinkProps {
+  title: string;
+  url: string;
+}
+
+function NavbarListLink({ title, url }: NavbarListLinkProps) {
+  return (
+    <li className="hover-underline-animation">
+      <a href={url}>{title}</a>
+    </li>
+  );
+}
+
+interface NavbarToggleProps {
+  toggle: boolean;
+  children: React.ReactNode;
+}
+
+function NavbarToggle({ toggle, children }: NavbarToggleProps) {
+  return (
+    <div
+      className="navbar__mobile-nav-toggle sr-only"
+      aria-label="Toggle navigation"
+      aria-expanded={toggle}
+    >
+      {children}
+    </div>
+  );
+}
