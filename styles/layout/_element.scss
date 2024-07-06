@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
 
+  &--hero {
+    min-height: calc(95vh - 10rem) !important;
+  }
+
   @include respond(phone) {
     padding: 5rem;
   }

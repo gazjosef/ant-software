@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FooterList from "../Snippets/FooterList";
 import FooterCopyright from "../Snippets/FooterCopyright";
 
 const FooterNavItems = [
@@ -34,10 +35,7 @@ export default function Footer() {
         </div>
         <div className="footer__links | u-margin-x-auto">
           <nav>
-            <ul
-              role="list"
-              className="u-flex u-align-center u-justify-between u-gap-1"
-            >
+            <FooterList>
               {FooterNavItems.map((item, index) => {
                 return (
                   <li key={index}>
@@ -45,7 +43,7 @@ export default function Footer() {
                   </li>
                 );
               })}
-            </ul>
+            </FooterList>
           </nav>
         </div>
       </div>

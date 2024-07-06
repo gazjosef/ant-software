@@ -2301,6 +2301,9 @@ body {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+.section--hero {
+  min-height: calc(95vh - 10rem) !important;
+}
 @media (max-width: 37.5em) {
   .section {
     padding: 5rem;
@@ -2457,12 +2460,12 @@ body {
   grid-template-columns: repeat(3, minmax(10rem, 1fr));
   grid-gap: 4rem;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 64em) {
   .section-services__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 40em) {
   .section-services__grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2570,7 +2573,7 @@ body {
   text-transform: uppercase;
 }
 .feature-box p {
-  text-align: justify;
+  text-align: center;
   color: var(--clr-black-1000);
   font-size: 1.5rem;
 }

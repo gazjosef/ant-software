@@ -1,43 +1,42 @@
 import { useState } from "react";
-// import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-interface MenuItem {
+const Links: Link[] = [
+  {
+    title: "Home",
+    url: "#home",
+  },
+  {
+    title: "About",
+    url: "#about",
+  },
+  {
+    title: "Services",
+    url: "#services",
+  },
+  {
+    title: "Contact",
+    url: "#contact",
+  },
+];
+
+interface Link {
   title: string;
   url: string;
 }
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   const [toggle, setToggle] = useState<boolean>(false);
 
   const handleClick = () => {
     setToggle((t) => !t);
   };
 
-  const MenuItems: MenuItem[] = [
-    {
-      title: "Home",
-      url: "#home",
-    },
-    {
-      title: "About",
-      url: "#about",
-    },
-    {
-      title: "Services",
-      url: "#services",
-    },
-    {
-      title: "Contact",
-      url: "#contact",
-    },
-  ];
-
   return (
     <nav className="navbar | u-flex u-items-center | u-fs-nav">
       <NavbarList toggle={toggle}>
-        {MenuItems &&
-          MenuItems.map((item: MenuItem) => {
+        {Links &&
+          Links.map((item: Link) => {
             return (
               <NavbarListLink
                 key={item.title}
@@ -47,20 +46,6 @@ const Navbar: React.FC = () => {
             );
           })}
       </NavbarList>
-      {/* TOGGLE BUTTON */}
-      {/* <div
-        className="navbar__mobile-nav-toggle sr-only"
-        aria-label="Toggle navigation"
-        aria-expanded={toggle}
-      >
-        <IconContext.Provider value={{}}>
-          {toggle ? (
-            <FaTimes onClick={handleClick} />
-          ) : (
-            <FaBars onClick={handleClick} />
-          )}
-        </IconContext.Provider>
-      </div> */}
 
       <NavbarToggle toggle={toggle}>
         {toggle ? (
@@ -71,9 +56,7 @@ const Navbar: React.FC = () => {
       </NavbarToggle>
     </nav>
   );
-};
-
-export default Navbar;
+}
 
 interface NavbarListProps {
   toggle: boolean;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
-import CtaBtn from "../Snippets/CtaBtn";
+import CtaBtn from "../Snippets/Button";
 
 export default function Hero() {
   const [homeTitleRef, homeTextRef, homeImgRef] = useGsapFadeIn();
@@ -27,8 +27,9 @@ export default function Hero() {
             We develop web, mobile and custom software that&apos;s tailor-made
             to capture all your unique and essential requirements.
           </p>
-
-          <CtaBtn />
+          <p className="paragraph">
+            <CtaBtn />
+          </p>
         </div>
       </div>
     </section>
