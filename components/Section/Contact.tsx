@@ -1,10 +1,8 @@
-import React from "react";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
 import EmailForm from "../Snippets/EmailForm";
 import Image from "next/image";
 
-const Contact: React.FC = () => {
+export default function Contact() {
   const [contactTitleRef, contactDetailsRef, contactFormRef] = useGsapFadeIn();
 
   return (
@@ -34,9 +32,6 @@ const Contact: React.FC = () => {
           <EmailForm />
         </section>
       </div>
-
-      {/* <div className="container"></div> */}
     </section>
   );
-};
-export default Contact;
+}

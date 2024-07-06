@@ -1,40 +1,26 @@
-import React from "react";
-import {
-  FaEnvelope,
-  FaPhone,
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
 import Image from "next/image";
-import useGsapFadeIn from "../../hooks/useGsapFadeIn";
-import { IconContext } from "react-icons";
+import FooterCopyright from "../Snippets/FooterCopyright";
 
-const Footer: React.FC = () => {
-  const [footerTitleRef, footerTextRef, footerImgRef] = useGsapFadeIn();
+const FooterNavItems = [
+  {
+    title: "Home",
+    url: "#home",
+  },
+  {
+    title: "About",
+    url: "#about",
+  },
+  {
+    title: "Services",
+    url: "#services",
+  },
+  {
+    title: "Contact",
+    url: "#contact",
+  },
+];
 
-  const currentYear = new Date().getFullYear();
-
-  const FooterNavItems = [
-    {
-      title: "Home",
-      url: "#home",
-    },
-    {
-      title: "About",
-      url: "#about",
-    },
-    {
-      title: "Services",
-      url: "#services",
-    },
-    {
-      title: "Contact",
-      url: "#contact",
-    },
-  ];
-
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
@@ -64,13 +50,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <section className="u-margin-top-medium ">
-        <p className="u-center-text u-margin-x-auto">
-          Copyright <span className="u-clr-secondary-100">&copy;</span> Ant
-          Software {currentYear}
-        </p>
-      </section>
+      <FooterCopyright />
     </footer>
   );
-};
-export default Footer;
+}

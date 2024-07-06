@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaBriefcase,
   FaShoppingCart,
@@ -9,7 +8,7 @@ import {
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
 import FeatureBox from "../Snippets/FeatureBox";
 
-const Services: React.FC = () => {
+export default function Services() {
   const [servicesTitleRef, servicesGridRef] = useGsapFadeIn();
 
   return (
@@ -77,6 +76,4 @@ const Services: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Services;
+}

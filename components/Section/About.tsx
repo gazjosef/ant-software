@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
 
-const About: React.FC = () => {
+export default function About() {
   const [aboutTitleRef, aboutImageRef, aboutTextRef] = useGsapFadeIn();
 
   return (
@@ -16,7 +15,7 @@ const About: React.FC = () => {
           </h1>
         </div>
 
-        <div className="container | u-grid u-even-columns u-gap-3">
+        <section className="container | u-grid u-even-columns u-gap-3">
           <div className="section-about__image" ref={aboutImageRef}>
             <Image
               src="/img/illustrations/undraw_developer_activity_bv83.svg"
@@ -34,9 +33,8 @@ const About: React.FC = () => {
               software.
             </p>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
-};
-export default About;
+}

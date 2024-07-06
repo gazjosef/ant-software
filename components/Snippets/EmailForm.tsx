@@ -1,6 +1,4 @@
-import React from "react";
-
-const EmailForm: React.FC = () => {
+export default function EmailForm() {
   return (
     <form action="/action_page.php" className="form">
       <label htmlFor="fname">First Name</label>
@@ -33,6 +31,4 @@ const EmailForm: React.FC = () => {
       <input type="submit" value="Submit" className="btn" />
     </form>
   );
-};
-
-export default EmailForm;
+}

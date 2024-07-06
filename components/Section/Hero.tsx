@@ -1,9 +1,8 @@
 import Image from "next/image";
-import React from "react";
 import useGsapFadeIn from "../../hooks/useGsapFadeIn";
 import CtaBtn from "../Snippets/CtaBtn";
 
-const Hero: React.FC = () => {
+export default function Hero() {
   const [homeTitleRef, homeTextRef, homeImgRef] = useGsapFadeIn();
 
   return (
@@ -34,5 +33,4 @@ const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
-export default Hero;
+}
