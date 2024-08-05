@@ -1,5 +1,5 @@
 import Image from "next/image";
-import useGsapFadeIn from "../../hooks/useGsapFadeIn";
+import useGsapFadeIn from "../../../hooks/useGsapFadeIn";
 
 export default function About() {
   const [aboutTitleRef, aboutImageRef, aboutTextRef] = useGsapFadeIn();

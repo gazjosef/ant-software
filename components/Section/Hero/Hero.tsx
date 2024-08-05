@@ -1,6 +1,6 @@
 import Image from "next/image";
-import useGsapFadeIn from "../../hooks/useGsapFadeIn";
-import CtaBtn from "../Snippets/Button";
+import useGsapFadeIn from "../../../hooks/useGsapFadeIn";
+import CtaBtn from "../../Snippets/Button";
 
 export default function Hero() {
   const [homeTitleRef, homeTextRef, homeImgRef] = useGsapFadeIn();

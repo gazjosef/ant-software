@@ -1,6 +1,6 @@
 import Image from "next/image";
-import FooterList from "../Snippets/FooterList";
-import FooterCopyright from "../Snippets/FooterCopyright";
+import FooterList from "./FooterList";
+import FooterCopyright from "./FooterCopyright";
 
 const FooterNavItems = [
   {

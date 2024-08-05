@@ -1,5 +1,5 @@
-import useGsapFadeIn from "../../hooks/useGsapFadeIn";
-import EmailForm from "../Snippets/EmailForm";
+import useGsapFadeIn from "../../../hooks/useGsapFadeIn";
+import EmailForm from "../../Snippets/EmailForm";
 import Image from "next/image";
 
 export default function Contact() {
