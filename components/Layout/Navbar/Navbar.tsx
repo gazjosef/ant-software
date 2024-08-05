@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Links: Link[] = [
@@ -84,8 +85,10 @@ interface NavbarListLinkProps {
 }
 
 function NavbarListLink({ title, url }: NavbarListLinkProps) {
+  console.log(url);
   return (
     <li className="hover-underline-animation">
+      {/* <NavLink to="/home">{title}</NavLink> */}
       <a href={url}>{title}</a>
     </li>
   );
