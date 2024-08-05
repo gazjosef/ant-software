@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Hero from "../components/Section/Hero";
-import About from "../components/Section/About";
-import Services from "../components/Section/Services";
-import Contact from "../components/Section/Contact";
+import Hero from "../components/Section/Hero/Hero";
+import About from "../components/Section/About/About";
+import Services from "../components/Section/Services/Services";
+import Contact from "../components/Section/Contact/Contact";
 
 const Home: NextPage = () => {
   return (
