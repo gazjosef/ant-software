@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import FooterList from "./FooterList";
 import FooterCopyright from "./FooterCopyright";
+import Styles from "./Footer.module.scss";
 
 const FooterNavItems = [
   {
@@ -38,9 +41,9 @@ export default function Footer() {
             <FooterList>
               {FooterNavItems.map((item, index) => {
                 return (
-                  <li key={index}>
-                    <a href={item.url}>{item.title}</a>
-                  </li>
+                  <Link key={item.title} href={item.url}>
+                    {item.title}
+                  </Link>
                 );
               })}
             </FooterList>

@@ -2422,6 +2422,47 @@ body {
   }
 }
 
+.footer {
+  background-color: var(--clr-black-1000);
+  padding: 4rem 2rem;
+  color: var(--clr-white-0);
+  text-align: center;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 37.5em) {
+  .footer .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
+.footer a {
+  color: var(--clr-white-0);
+  text-transform: uppercase;
+}
+.footer nav {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-semibold);
+}
+.footer__img, .footer__links {
+  display: grid;
+  place-items: center;
+}
+.footer__links {
+  width: 40rem;
+}
+.footer__links > * {
+  width: 100%;
+}
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .section-contact .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

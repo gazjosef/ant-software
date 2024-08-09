@@ -1,3 +1,5 @@
+import FeatureBox from "../../Snippets/FeatureBox";
+import useGsapFadeIn from "../../../hooks/useGsapFadeIn";
 import {
   FaBriefcase,
   FaShoppingCart,
@@ -5,8 +7,6 @@ import {
   FaSearch,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import useGsapFadeIn from "../../../hooks/useGsapFadeIn";
-import FeatureBox from "../../Snippets/FeatureBox";
 
 export default function Services() {
   const [servicesTitleRef, servicesGridRef] = useGsapFadeIn();
